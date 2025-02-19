@@ -1,0 +1,15 @@
+/* ------------- FOOTER ------------ */
+footer {
+  background-color: var(--theme-light-grey);
+  padding: 4rem 0;
+  text-align: center;
+}
+footer img {
+  height: 4rem;
+  border-radius: 4rem;
+  margin: 2rem 0;
+}
+footer p {
+  font-size: larger;
+  font-weight: 750;
+}

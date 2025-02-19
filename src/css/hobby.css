@@ -1,0 +1,84 @@
+/* ================= SiteBody (Hobby Page) ================= */
+.hobby-page {
+  border-radius: 1rem;
+  padding: 1rem 2rem 2rem 2rem;
+  background-color: var(--theme-white-background);
+  margin-top: 0.5rem;
+}
+
+.hobby-page .hobby-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.hobby-page .hobby-nav li {
+  color: black ;
+  padding: 0 1rem;
+}
+
+.hobby-page .hobby-nav li a {
+  padding: 0.5rem 1rem;
+  border-radius: 4rem;
+  color: var(--theme-grey);
+  background-color: var(--theme-light-grey);
+  transition: 0.3s;
+}
+
+/* ------------------------------------------------------- */
+.hobby-page .hobby-tab {
+  background: var(--theme-light-shading-grey);
+  padding: 1rem 1rem 2rem 1rem;
+  border-radius: 1rem;
+  margin-top: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+    rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+
+.hobby-page .hobby-tab .hobby-tab-img {
+  overflow: hidden;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+}
+
+.hobby-page .hobby-tab:hover .hobby-tab-img img {
+  transform: scale(1.2);
+}
+
+.hobby-page .hobby-tab .hobby-tab-img img {
+  width: 100%;
+  transition: 0.4s;
+  height: auto;
+}
+
+.hobby-page .hobby-tab .hobby-bottom {
+  display: inline-block;
+  text-align: start;
+  margin: 1rem 0;
+}
+
+.hobby-page .hobby-tab .hobby-bottom a {
+  font-size: 1.5rem;
+  color: black;
+  font-weight: 500;
+}
+
+.hobby-page .hobby-tab .hobby-bottom a:hover {
+  color: var(--theme-pink);
+}
+
+.hobby-page .hobby-tab .hobby-para span:first-child {
+  float: left;
+  color: var(--theme-pink);
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.hobby-page .hobby-tab .hobby-para span:last-child {
+  float: right;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+

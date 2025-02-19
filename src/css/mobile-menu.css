@@ -1,0 +1,30 @@
+/* --------------------- Mobile~Menu ---------------------- */
+.menu {
+  text-align: center;
+  background-color: var(--theme-white-background);
+}
+
+.menu .menu-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--theme-light-grey);
+}
+
+.css-ewdv3l {
+  background-color: var(--theme-light-grey);
+}
+.ps-open {
+  background-color: var(--theme-light-grey);
+}
+
+.css-ewdv3l li a {
+  border-radius: 4rem;
+  padding: 0 !important;
+}
+/* ------------------------- Media Query ------------------------- */
+@media (max-width: 992px) {
+  .menu {
+    display: block;
+  }
+}

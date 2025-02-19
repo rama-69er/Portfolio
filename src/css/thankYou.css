@@ -1,0 +1,29 @@
+/* =============================================================== */
+
+.thankyou-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.thankyou-para {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.thankyou-para h1 {
+    font-size: 2.5rem;
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+.thankyou-para p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 10px;
+}

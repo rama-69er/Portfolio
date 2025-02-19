@@ -1,0 +1,132 @@
+/* ================= SiteBody (Contact Page) ================= */
+.contact-part {
+  padding: 0 2rem 2rem 2rem;
+  background-color: var(--theme-white-background);
+  border-radius: 1rem;
+  line-height: 2;
+  margin-top: 0.5rem;
+}
+
+.contact-part .contact-para {
+  padding: 2rem;
+  background-color: var(--theme-light-grey);
+  border-radius: 1rem;
+  margin-top: 2rem;
+}
+
+.contact-part .contact-para span {
+  color: var(--theme-grey);
+}
+
+.contact-part .contact-para .contact-img {
+  overflow: hidden;
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+}
+
+.contact-part .contact-para .contact-img img {
+  width: 100%;
+}
+
+.contact-part .contact-para:hover .contact-img img {
+  transform: scale(1.1);
+  transition: all 0.5s ease-in-out;
+}
+
+.contact-part .contact-para h6 {
+  padding: 1rem 0;
+}
+
+.contact-part .contact-para p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 2px solid grey;
+  padding: 0.1rem;
+}
+.contact-part .contact-para p:last-child {
+  border-bottom: 2px solid grey;
+}
+
+.contact-part .contact-para p i {
+  font-size: x-large;
+}
+
+.contact-part .contact-para p a {
+  color: var(--theme-black);
+  border-left: 2px dashed var(--theme-black);
+  border-right: 2px dashed var(--theme-black);
+  width: 100%;
+  text-align: center;
+  margin: auto;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+    rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+.contact-part .contact-para p a:hover {
+  color: var(--theme-pink);
+}
+
+.contact-part .contact-para ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.contact-part .contact-para ul li {
+  padding: 1rem;
+}
+
+.contact-part .contact-para ul li a {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+    rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+
+.contact-part .contact-form {
+  margin-top: 2rem;
+  padding: 2rem;
+  background-color: var(--theme-light-grey);
+  border-radius: 1rem;
+}
+
+.contact-part .contact-form div label {
+  font-size: smaller;
+  font-family: Arial, Helvetica, and Times New Roman;
+  font-weight: 550;
+}
+
+.contact-part .contact-form div input,
+.contact-part .contact-form div textarea {
+  border-radius: 4px;
+  width: 100%;
+  border: 1px solid var(--theme-grey);
+  margin: 1rem 0;
+}
+
+.contact-part .contact-form form a {
+  font-size: 1.5rem;
+  border: 2px solid grey;
+  margin: 1rem 0;
+  padding: 0 !important;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+    rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    box-sizing: border-box;
+}
+
+
+/* ----------------------- Media Query ------------------------- */
+
+@media (max-width: 992px) {
+  .contact-part {
+    margin: auto;
+  }
+}
+
+@media (max-width: 425px) {
+  .contact-part .contact-para p i {
+    font-size: medium;
+  }
+  .contact-part .contact-para p a {
+    font-size: x-small;
+  }
+}

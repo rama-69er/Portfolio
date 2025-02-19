@@ -1,0 +1,90 @@
+/* ================= SiteBody (project Page) ================= */
+/* --------------------- SiteBody (project) ---------------------- */
+.siteBody .site-project {
+  border-radius: 1rem;
+  padding: 0 2rem 2rem 2rem;
+  text-align: center;
+  background-color: var(--theme-white-background);
+  margin-top: 0.5rem;
+}
+
+.siteBody .site-project .project-left,
+.siteBody .site-project .project-right {
+  padding: 2rem;
+  border: 1px solid var(--theme-grey);
+  margin: 2rem 0;
+  border-radius: 2rem;
+}
+
+.siteBody .site-project .project-left div,
+.siteBody .site-project .project-right div {
+  color: var(--theme-pink);
+  font-size: 3rem;
+  margin: 1rem 0;
+}
+
+.site-project .project-tab {
+  background: var(--theme-light-shading-grey);
+  padding: 1rem 1rem 2rem 1rem;
+  border-radius: 1rem;
+  margin-top: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+    rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+
+.site-project .project-tab .project-tab-img {
+  overflow: hidden;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+}
+
+.site-project .project-tab:hover .project-tab-img img {
+  transform: scale(1.2);
+}
+
+.site-project .project-tab .project-tab-img img {
+  width: 100%;
+  transition: 0.4s;
+  height: auto;
+}
+
+.site-project .project-tab .project-bottom {
+  display: inline-block;
+  text-align: center;
+}
+
+.site-project .project-tab .project-bottom a {
+  font-size: 1.5rem;
+  color: black;
+  font-weight: 500;
+}
+
+.site-project .project-tab .project-bottom a:hover {
+  color: var(--theme-pink);
+}
+
+.site-project .project-tab .project-bottom a i {
+  transform: rotate(-45deg);
+  font-size: 0rem;
+  color: var(--theme-pink);
+}
+
+.site-project .project-tab .project-bottom a:hover i {
+  font-size: 1.5rem;
+  transition: all 0.4s ease;
+}
+
+.site-project .project-tab .project-para{
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.95rem;
+}
+
+.site-project .project-tab .project-para span:first-child {
+  color: var(--theme-pink);
+  font-weight: 500;
+}
+
+.site-project .project-tab .project-para span:last-child {
+  font-weight: 500;
+}
