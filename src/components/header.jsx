@@ -33,19 +33,19 @@ function Header() {
                                                         <h5>Software Developer</h5>
                                                         <ul>
                                                             <li>
-                                                                <Link target="_blank" rel="noreferrer" to="https://www.facebook.com/ramanand.dubey.988/"  className="theme-btn facebook">
+                                                                <a target="_blank" rel="noreferrer" to="https://www.facebook.com/ramanand.dubey.988/"  className="theme-btn facebook">
                                                                     <FontAwesomeIcon icon={faFacebook} />
-                                                                </Link>
+                                                                </a>
                                                             </li>
                                                             <li>
-                                                                <Link target="_blank" rel="noreferrer" to="https://www.instagram.com/rd.x_69er/" className="theme-btn instagram">
+                                                                <a target="_blank" rel="noreferrer" to="https://www.instagram.com/rd.x_69er/" className="theme-btn instagram">
                                                                     <FontAwesomeIcon icon={faInstagram} />
-                                                                </Link>
+                                                                </a>
                                                             </li>
                                                             <li>
-                                                                <Link target="_blank" rel="noreferrer" to="https://www.linkedin.com/in/ramanand-dubey-985b9025a/" className="theme-btn linkedIn">
+                                                                <a target="_blank" rel="noreferrer" to="https://www.linkedin.com/in/ramanand-dubey-985b9025a/" className="theme-btn linkedIn">
                                                                     <FontAwesomeIcon icon={faLinkedin} />
-                                                                </Link>
+                                                                </a>
                                                             </li>
                                                         </ul>
                                                     </div>
