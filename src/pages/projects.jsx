@@ -8,12 +8,12 @@ import { faGlobe } from "@fortawesome/free-solid-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
 const projects = [
-  { id: 1, pImg: "/images/Personal Website.png", spanLeft: "Go Live", spanRight: "gitHub", pName: "Personal Website", pLink: "" },
-  { id: 2, pImg: "/images/form filling.png", spanLeft: "Go Live", spanRight: "gitHub", pName: "Form Filling Website", pLink: "" },
-  { id: 3, pImg: "/images/Chat Bot.png", spanLeft: "Go Live", spanRight: "gitHub", pName: "Chatbot  Integration", pLink: "" },
-  { id: 4, pImg: "/images/Portfolio.png", spanLeft: "Go Live", spanRight: "gitHub", pName: "My Personal Portfolio", pLink: "" },
-  { id: 5, pImg: "/images/Crop Recommendation.png", spanLeft: "Go Live", spanRight: "gitHub", pName: "Crop Recommendation System", pLink: "" },
-  { id: 6, pImg: "/images/Figma Replication.png", spanLeft: "Go Live", spanRight: "gitHub", pName: "Figma Replication", pLink: "" },
+  { id: 1, pImg: "/images/Personal Website.png", pName: "Personal Website", gLink: "", vLink: "" },
+  { id: 2, pImg: "/images/form filling.png", pName: "Form Filling Website", gLink: "", vLink: "" },
+  { id: 3, pImg: "/images/Chat Bot.png", pName: "Chatbot  Integration", gLink: "", vLink: "" },
+  { id: 4, pImg: "/images/Portfolio.png", pName: "My Personal Portfolio", gLink: "", vLink: "" },
+  { id: 5, pImg: "/images/Crop Recommendation.png", pName: "Crop Recommendation System", gLink: "", vLink: "" },
+  { id: 6, pImg: "/images/Figma Replication.png", pName: "Figma Replication", gLink: "", vLink: "" },
 ]
 
 function Projects() {
@@ -37,10 +37,10 @@ function Projects() {
                               <img src={pData.pImg} alt={pData.pName} />
                             </div>
                             <div className="project-para">
-                              <a target="_blank" rel="noreferrer" href={pData.pLink}>
+                              <a target="_blank" rel="noreferrer" href={pData.vLink}>
                                 <FontAwesomeIcon icon={faGlobe} size="lg" />
                               </a>
-                              <a target="_blank" rel="noreferrer" href={pData.pLink}>
+                              <a target="_blank" rel="noreferrer" href={pData.gLink}>
                                 <FontAwesomeIcon icon={faGithub} size="lg" />
                               </a>
                             </div>
