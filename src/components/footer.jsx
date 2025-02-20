@@ -6,7 +6,7 @@ function Footer() {
     <>
       <footer>
         <img src="/images/my_logo.jpg" alt="err_laoding" />
-        <p>© 2024. All rights reserved by Ramanand Dubey</p>
+        <p>© 2025. All rights reserved by Ramanand Dubey</p>
       </footer>
     </>
   );
