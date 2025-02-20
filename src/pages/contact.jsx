@@ -91,9 +91,9 @@ function Contact() {
                                 {""}
                               </textarea>
                             </div>
-                            <a className="theme-btn text-center " href="/thankyou">
+                            <button type="submit"  className="theme-btn text-center " href="/thankyou">
                               <FontAwesomeIcon icon={faTelegram} />
-                            </a>
+                            </button>
                           </div>
                         </form>
                       </div>
