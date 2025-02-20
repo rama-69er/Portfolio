@@ -62,6 +62,7 @@ function Contact() {
                                 type="text"
                                 id="fullName"
                                 placeholder=" Your Name Here..."
+                                required
                               />
                             </div>
                             <div className="col-lg-6">
@@ -70,6 +71,7 @@ function Contact() {
                                 type="tel"
                                 id="fullName"
                                 placeholder=" Your Number Here..."
+                                required
                               />
                             </div>
                             <div className="col-lg-12">
@@ -79,12 +81,13 @@ function Contact() {
                                 type="text"
                                 id="subject"
                                 placeholder=" Write your Subject..."
+                                required
                               />
                             </div>
                             <div className="col-lg-12">
                               <label for="message">MESSAGE</label>
                               <br />
-                              <textarea id="message" cols="0" rows="6" placeholder=" Write your Message...">
+                              <textarea id="message" cols="0" rows="6" placeholder=" Write your Message..." required>
                                 {""}
                               </textarea>
                             </div>
