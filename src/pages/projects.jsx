@@ -4,7 +4,7 @@ import "../css/projects.css";
 import Navbar from "../components/navbar";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHeart, faGlobe } from "@fortawesome/free-solid-svg-icons";
+import { faGlobe } from "@fortawesome/free-solid-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
 const projects = [
@@ -40,7 +40,6 @@ function Projects() {
                               <a target="_blank" rel="noreferrer" href={pData.pLink}>
                                 <FontAwesomeIcon icon={faGlobe} size="lg" />
                               </a>
-                              <FontAwesomeIcon icon={faHeart} />
                               <a target="_blank" rel="noreferrer" href={pData.pLink}>
                                 <FontAwesomeIcon icon={faGithub} size="lg" />
                               </a>
