@@ -8,7 +8,7 @@ const educationDetails = [{
   degree: "Bachlore of Technology",
   year: "2020 - 2024",
   school: "Veer Bahadur Singh Purvanchal University, Jaunpur, Uttar Pradesh",
-  description: "I graduated with a Bachelor's degree in Information Technology from Veer Bahadur Singh Purvanchal University, achieving a cumulative percentage of 70.69%"
+  description: "I graduated with a Bachelor's degree in Information Technology from Veer Bahadur Singh Purvanchal University, achieving a total score of 70.69 percentage marks."
 }, {
   id: 2,
   degree: "Intermediate Education",
