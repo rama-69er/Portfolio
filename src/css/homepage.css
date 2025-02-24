@@ -48,8 +48,8 @@
 .homeTab .homepage-tab .left-tab #profile-image {
   border-radius: 1rem;
   border: 4px solid var(--theme-light-grey);
-  height: 13rem;
-  width: 10rem;
+  height: 14rem;
+  width: 14rem;
 }
 
 .theme-btn {
@@ -229,6 +229,16 @@
   }
   .siteBody .site-about .about-para {
     margin-left: 4rem;
+  }
+
+  .homeTab .homepage-tab .left-tab #profile-image {
+    width: 12rem;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1024px) {
+  .homeTab .homepage-tab .left-tab #profile-image {
+    width: 11rem;
   }
 }
 
