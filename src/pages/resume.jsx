@@ -71,8 +71,8 @@ function Resume() {
                       <div className="row">
                         <div className="col-lg-12">
                           <div className="resume-heading resume-heading-2">
-                            <p>2024 - Onwards</p>
-                            <h2>Job Experience</h2>
+                            <p>2023 - Onwards</p>
+                            <h2>Job / Intern Experience</h2>
                           </div>
                         </div>
                         <div className="col-lg-12">
