@@ -3,6 +3,33 @@ import "../css/resume.css";
 
 import Navbar from "../components/navbar";
 
+const educationDetails = [{
+  id: 1,
+  degree: "Bachlore of Technology",
+  year: "2020 - 2024",
+  school: "Veer Bahadur Singh Purvanchal University, Jaunpur, Uttar Pradesh",
+  description: "I graduated with a Bachelor's degree in Information Technology from Veer Bahadur Singh Purvanchal University, achieving a cumulative percentage of 70.69%"
+}, {
+  id: 2,
+  degree: "Intermediate Education",
+  year: "2019 - 2020",
+  school: "Swami TeonRam Alok Sr. Sec. School, Kota, Rajasthan",
+  description: "I successfully completed my intermediate education at Swami TeonRam Alok Sr. Sec. School, achieving a score of 65% in PCM from the RBSE board."
+}, {
+  id: 3,
+  degree: "High School Education",
+  year: "2016 - 2017",
+  school: "Maharaja Public Sr. Sec. School, Ajmer, Rajasthan",
+  description: "I successfully completed my secondary education at Maharaja Public Sr. Sec. School, achieving a score of 63% from the RBSE board."
+}]
+
+const jobExperience = [{
+  id: 1,
+  company: "Innovilla Private Ltd.",
+  duration: "02 June,23 - 02 July,23",
+  location: "CDC Building, BHU, Varanasi",
+  description: "The company's objective was to develop a search engine optimized (SEO) web application for local businesses within the city. This web application was designed using HTML, CSS, JavaScript, and Bootstrap."
+},]
 
 function Resume() {
   return (
@@ -21,33 +48,22 @@ function Resume() {
                       <div className="row">
                         <div className="col-lg-12">
                           <div className="resume-heading resume-heading-1">
-                            <p>2019 - 2024</p>
+                            <p>2016 - 2024</p>
                             <h2>Education Qualification</h2>
                           </div>
                         </div>
                         <div className="col-lg-12">
-                          <div className="resume-tab">
-                            <h3>Intermediate Education</h3>
-                            <span>2019 - 2020</span>
-                            <p>Swami TeonRam Alok sr. sec. School, Kota, Rajasthan</p>
-                            <hr />
-                            <p>
-                              I have passed my intermediate education from Swami TeonRam Alok sr. sec. school gaining 65% marks in the subject of P.C.M. from R.B.S.E. board.
-                            </p>
-                          </div>
-                        </div>
-                        <div className="col-lg-12">
-                          <div className="resume-tab">
-                            <h3>Bachlore of Technology</h3>
-                            <span>2020 - 2024</span>
-                            <p>
-                              Veer Bahadur Singh Purvanchal University, Jaunpur, Uttar Pradesh
-                            </p>
-                            <hr />
-                            <p>
-                              I have completed my bachlore degree from Veer Bahadur Singh Purvanchal University obtaining aggregrate 70.69% marks in the branch of Information Technology.
-                            </p>
-                          </div>
+                          {educationDetails.map((education) => (
+                            <>
+                              <div className="resume-tab" key={education.id}>
+                                <h3>{education.degree}</h3>
+                                <span>{education.year}</span>
+                                <p>{education.school}</p>
+                                <hr />
+                                <p>{education.description}</p>
+                              </div>
+                            </>
+                          ))}
                         </div>
                       </div>
                     </div>
@@ -60,29 +76,17 @@ function Resume() {
                           </div>
                         </div>
                         <div className="col-lg-12">
-                          <div className="resume-tab">
-                            <h3>Innovilla Private Ltd.</h3>
-                            <span>02 June,23 - 02 July,23</span>
-                            <p>CDC Building, BHU, Varanasi</p>
-                            <hr />
-                            <p>
-                              The company's motive was to provide a running, seo based
-                              web application to the local business around the city. I
-                              projected there as an Inter using technologies such as
-                              HTML, CSS, JS and Bootstrap.
-                            </p>
-                          </div>
-                        </div>
-                        <div className="col-lg-12">
-                          <div className="resume-tab">
-                            <h3>Next . . .</h3>
-                            <span>+</span>
-                            <p>*-*-*-*-*-*-*-*</p>
-                            <hr />
-                            <p>
-                              *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
-                            </p>
-                          </div>
+                          {jobExperience.map((job) => (
+                            <>
+                              <div className="resume-tab" key={job.id}>
+                                <h3>{job.company}</h3>
+                                <span>{job.duration}</span>
+                                <p>{job.location}</p>
+                                <hr />
+                                <p>{job.description}</p>
+                              </div>
+                            </>
+                          ))}
                         </div>
                       </div>
                     </div>
