@@ -4,12 +4,12 @@ import Cards from './cards'
 import { faStar } from "@fortawesome/free-solid-svg-icons";
 
 const Hobbies = [
-    { id: 1, name: "The Secret Annex", img: "/images/books.avif", type: "Outdoor", rateIcon: faStar, ratePoint: 4 },
-    { id: 2, name: "Train to Pakistan", img: "/images/books.avif", type: "Outdoor", rateIcon: faStar, ratePoint: 2 },
-    { id: 3, name: "Half Girlfriend", img: "/images/books.avif", type: "Indoor", rateIcon: faStar, ratePoint: 3 },
-    { id: 4, name: "The girl in room 105", img: "/images/books.avif", type: "Outdoor", rateIcon: faStar, ratePoint: 3 },
-    { id: 5, name: "You are the best wife", img: "/images/books.avif", type: "Outdoor", rateIcon: faStar, ratePoint: 5 },
-    { id: 6, name: "Revolution Twenty20", img: "/images/books.avif", type: "Outdoor", rateIcon: faStar, ratePoint: 4 },
+    { id: 1, name: "The Secret Annex", img: "/images/books.avif", type: "Autobiography", rateIcon: faStar, ratePoint: 4 },
+    { id: 2, name: "Train to Pakistan", img: "/images/books.avif", type: "Fiction", rateIcon: faStar, ratePoint: 2 },
+    { id: 3, name: "Half Girlfriend", img: "/images/books.avif", type: "Fiction", rateIcon: faStar, ratePoint: 4 },
+    { id: 4, name: "The girl in room 105", img: "/images/books.avif", type: "Fiction", rateIcon: faStar, ratePoint: 3 },
+    { id: 5, name: "You are the best wife", img: "/images/books.avif", type: "Romantic", rateIcon: faStar, ratePoint: 5 },
+    { id: 6, name: "Revolution Twenty20", img: "/images/books.avif", type: "Fiction", rateIcon: faStar, ratePoint: 4 },
 ]
 
 function Sports() {

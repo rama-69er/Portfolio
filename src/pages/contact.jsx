@@ -46,7 +46,9 @@ function Contact() {
                           </a>
                         </p>
                         <p>
-                          <a href="https://www.mailto:ramanand.dubey@yahoo.com">
+                          <a target="_blank"
+                            rel="noreferrer"
+                            href="mailto:ramanand.dubey@yahoo.com">
                             <FontAwesomeIcon icon={faEnvelope} /> : ramanand.dubey@yahoo.com
                           </a>
                         </p>
@@ -91,7 +93,7 @@ function Contact() {
                                 {""}
                               </textarea>
                             </div>
-                            <button type="submit" className="theme-btn text-center " href="/thankyou">
+                            <button type="submit"  className="theme-btn text-center " href="/thankyou">
                               <FontAwesomeIcon icon={faTelegram} />
                             </button>
                           </div>
