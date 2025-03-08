@@ -310,14 +310,11 @@
 
 @media (max-width: 475px) {
   .hobby-page .navBar .hobby-nav {
-  .hobby-page .navBar .hobby-nav {
     flex-direction: column;
   }
   .hobby-page .navBar .hobby-nav li {
-  .hobby-page .navBar .hobby-nav li {
     margin: 0.5rem 0;
   }
-
   .clients .client-tab {
     width: 80%;
     margin: 1rem auto;
@@ -326,9 +323,6 @@
     height: 12.5rem;
     width: 75%;
   }
-}
-
-
   .technology .technology-tab {
     width: 80%;
     margin: 1rem auto;
