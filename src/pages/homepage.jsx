@@ -105,13 +105,13 @@ function HomePage() {
                   </div>
                 </div>
               </div>
-              <div className="clients">
+              <div className="technology">
                 <div className="container">
                   <h5>Technologies that I use . . .</h5>
                   <div className="row">
                     {techData.map((data) =>
                       <div className="col-lg-2 col-md-4 col-sm-1">
-                        <div className="client-tab ">
+                        <div className="technology-tab ">
                           <span key={data.id}>
                             <a href={data.aLink}>
                               <img src={data.imgLink} alt="err_loading" />

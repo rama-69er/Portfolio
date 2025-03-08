@@ -22,8 +22,8 @@ function Header() {
                                                 <div className="col-md-4">
                                                     <img
                                                         id="profile-image"
-                                                        src="/images/dp.jpg"
-                                                        alt="err_loading"
+                                                        src="/images/dp1.webp"
+                                                        alt="ramanand"
                                                     />
                                                 </div>
                                                 <div className="col-md-8">
