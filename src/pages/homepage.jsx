@@ -92,15 +92,15 @@ function HomePage() {
                   </div>
                   <div className="col-lg-6">
                     <div className="project-right">
-                        <div>
-                          <FontAwesomeIcon icon={faPenToSquare} />
-                        </div>
-                        <h5>Data Structure and Algorithm</h5>
-                        <p>
-                          Problem solving skills using C++, motivated to expand
-                          knowledge & skills and is curious about learning new
-                          things.
-                        </p>
+                      <div>
+                        <FontAwesomeIcon icon={faPenToSquare} />
+                      </div>
+                      <h5>Data Structure and Algorithm</h5>
+                      <p>
+                        Problem solving skills using C++, motivated to expand
+                        knowledge & skills and is curious about learning new
+                        things.
+                      </p>
                     </div>
                   </div>
                 </div>
