@@ -22,7 +22,7 @@ function Header() {
                                                 <div className="col-md-4">
                                                     <img
                                                         id="profile-image"
-                                                        src="/images/dp1.webp"
+                                                        src="/images/dp.webp"
                                                         alt="ramanand"
                                                     />
                                                 </div>

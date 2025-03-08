@@ -29,7 +29,7 @@ function HomePage() {
                 <div className="row">
                   <div className="col-md-5">
                     <div className="about-image">
-                      <img src="./images/dp1.jpg" alt="err_loading" />
+                      <img src="./images/dp1.webp" alt="err_loading" />
                     </div>
                   </div>
                   <div className="col-md-7">
@@ -111,7 +111,7 @@ function HomePage() {
                   <div className="row">
                     {techData.map((data) =>
                       <div className="col-lg-2 col-md-4 col-sm-1">
-                        <div className="technology-tab ">
+                        <div className="technology-tab">
                           <span key={data.id}>
                             <a href={data.aLink}>
                               <img src={data.imgLink} alt="err_loading" />

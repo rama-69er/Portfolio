@@ -188,7 +188,7 @@
 }
 
 .technology .technology-tab div a {
-  color: grey;
+  color: var(--theme-black);
 }
 
 .technology .technology-tab div a:hover {
