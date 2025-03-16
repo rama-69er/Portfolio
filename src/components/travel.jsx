@@ -4,12 +4,12 @@ import Cards from './cards'
 import { faStar } from "@fortawesome/free-solid-svg-icons";
 
 const Hobbies = [
-    { id: 1, name: "Varanasi", img: "/images/travel.jpg", type: "₹ 650/-", rateIcon: faStar, ratePoint: 4 },
-    { id: 2, name: "Agra", img: "/images/travel.jpg", type: "₹ 750/-", rateIcon: faStar, ratePoint: 3 },
-    { id: 3, name: "Uttarakhand", img: "/images/travel.jpg", type: "₹ 5,500/-", rateIcon: faStar, ratePoint: 5 },
-    { id: 4, name: "Lucknow", img: "/images/travel.jpg", type: "₹ 750/-", rateIcon: faStar, ratePoint: 4 },
-    { id: 5, name: "Prayagraj", img: "/images/travel.jpg", type: "₹ 350/-", rateIcon: faStar, ratePoint: 3 },
-    { id: 6, name: "Mathura", img: "/images/travel.jpg", type: "₹ 2,500/-", rateIcon: faStar, ratePoint: 4 },
+    { id: 1, name: "Varanasi", img: "/images/travel.webp", type: "₹ 650/-", rateIcon: faStar, ratePoint: 4 },
+    { id: 2, name: "Agra", img: "/images/travel.webp", type: "₹ 750/-", rateIcon: faStar, ratePoint: 3 },
+    { id: 3, name: "Uttarakhand", img: "/images/travel.webp", type: "₹ 5,500/-", rateIcon: faStar, ratePoint: 5 },
+    { id: 4, name: "Lucknow", img: "/images/travel.webp", type: "₹ 750/-", rateIcon: faStar, ratePoint: 4 },
+    { id: 5, name: "Prayagraj", img: "/images/travel.webp", type: "₹ 350/-", rateIcon: faStar, ratePoint: 3 },
+    { id: 6, name: "Mathura", img: "/images/travel.webp", type: "₹ 2,500/-", rateIcon: faStar, ratePoint: 4 },
 ]
 
 function Sports() {

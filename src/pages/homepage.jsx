@@ -29,7 +29,7 @@ function HomePage() {
                 <div className="row">
                   <div className="col-md-5">
                     <div className="about-image">
-                      <img src="./images/dp1.jpg" alt="err_loading" />
+                      <img src="./images/dp1.webp" alt="err_loading" />
                     </div>
                   </div>
                   <div className="col-md-7">

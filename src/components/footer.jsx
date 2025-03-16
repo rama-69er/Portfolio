@@ -5,7 +5,7 @@ function Footer() {
   return (
     <>
       <footer>
-        <img src="/images/my_logo.jpg" alt="err_laoding" />
+        <img src="/images/my_logo.webp" alt="err_laoding" />
         <p>© 2025. All rights reserved by Ramanand Dubey</p>
       </footer>
     </>

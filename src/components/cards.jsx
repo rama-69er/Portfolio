@@ -3,16 +3,16 @@ import React from 'react'
 import "../css/cards.css";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faStar } from "@fortawesome/free-solid-svg-icons";
 
-const Hobbies = [
-    { id: 1, name: "Football", img: "https://rainbowit.net/html/inbio/assets/images/blog/blog-01.jpg", type: "Outdoor", rateIcon: faStar, ratePoint: 4 },
-    { id: 2, name: "Kabaddi", img: "https://rainbowit.net/html/inbio/assets/images/blog/blog-01.jpg", type: "Outdoor", rateIcon: faStar, ratePoint: 4 },
-    { id: 3, name: "Chess", img: "https://rainbowit.net/html/inbio/assets/images/blog/blog-01.jpg", type: "Indoor", rateIcon: faStar, ratePoint: 4 },
-    { id: 4, name: "Badminton", img: "https://rainbowit.net/html/inbio/assets/images/blog/blog-01.jpg", type: "Outdoor", rateIcon: faStar, ratePoint: 4 },
-    { id: 5, name: "Volley Ball", img: "https://rainbowit.net/html/inbio/assets/images/blog/blog-01.jpg", type: "Outdoor", rateIcon: faStar, ratePoint: 3 },
-    { id: 6, name: "Cricket", img: "https://rainbowit.net/html/inbio/assets/images/blog/blog-01.jpg", type: "Outdoor", rateIcon: faStar, ratePoint: 2 },
-]
+// import { faStar } from "@fortawesome/free-solid-svg-icons";
+// const Hobbies = [
+//     { id: 1, name: "Football", img: "https://rainbowit.net/html/inbio/assets/images/blog/blog-01.jpg", type: "Outdoor", rateIcon: faStar, ratePoint: 4 },
+//     { id: 2, name: "Kabaddi", img: "https://rainbowit.net/html/inbio/assets/images/blog/blog-01.jpg", type: "Outdoor", rateIcon: faStar, ratePoint: 4 },
+//     { id: 3, name: "Chess", img: "https://rainbowit.net/html/inbio/assets/images/blog/blog-01.jpg", type: "Indoor", rateIcon: faStar, ratePoint: 4 },
+//     { id: 4, name: "Badminton", img: "https://rainbowit.net/html/inbio/assets/images/blog/blog-01.jpg", type: "Outdoor", rateIcon: faStar, ratePoint: 4 },
+//     { id: 5, name: "Volley Ball", img: "https://rainbowit.net/html/inbio/assets/images/blog/blog-01.jpg", type: "Outdoor", rateIcon: faStar, ratePoint: 3 },
+//     { id: 6, name: "Cricket", img: "https://rainbowit.net/html/inbio/assets/images/blog/blog-01.jpg", type: "Outdoor", rateIcon: faStar, ratePoint: 2 },
+// ]
 
 
 function Cards(props) {
