@@ -7,7 +7,7 @@
   background-color: var(--theme-light-grey);
 }
 .homePage .homepage-image {
-  background-image: url("/public/images/bg.avif");
+  background-image: url("/public/images/bg.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
