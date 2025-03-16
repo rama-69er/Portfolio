@@ -7,12 +7,12 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheck, faPenToSquare, faWandMagicSparkles } from "@fortawesome/free-solid-svg-icons";
 
 const techData = [
-  { id: 1, Name: "HTML", imgLink: "./images/html.png", aLink: "https://www.html.com" },
-  { id: 2, Name: "CSS", imgLink: "./images/css.png", aLink: "https://www.w3schools.com/cssref/index.php" },
-  { id: 3, Name: "JavaScript", imgLink: "./images/js.png", aLink: "https://www.w3schools.com/jsrEF/default.asp" },
-  { id: 4, Name: "Node.js", imgLink: "./images/node.png", aLink: "https://www.nodejs.org" },
-  { id: 5, Name: "MongoDB", imgLink: "./images/mongo.png", aLink: "http://www.mongodb.com" },
-  { id: 6, Name: "React.js", imgLink: "./images/react.png", aLink: "http://www.react.dev" },
+  { id: 1, Name: "HTML", imgLink: "./images/html.webp", aLink: "https://www.html.com" },
+  { id: 2, Name: "CSS", imgLink: "./images/css.webp", aLink: "https://www.w3schools.com/cssref/index.php" },
+  { id: 3, Name: "JavaScript", imgLink: "./images/js.webp", aLink: "https://www.w3schools.com/jsrEF/default.asp" },
+  { id: 4, Name: "Node.js", imgLink: "./images/node.webp", aLink: "https://www.nodejs.org" },
+  { id: 5, Name: "MongoDB", imgLink: "./images/mongo.webp", aLink: "http://www.mongodb.com" },
+  { id: 6, Name: "React.js", imgLink: "./images/react.webp", aLink: "http://www.react.dev" },
 ]
 
 function HomePage() {

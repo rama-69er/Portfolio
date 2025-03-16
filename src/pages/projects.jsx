@@ -8,12 +8,12 @@ import { faGlobe } from "@fortawesome/free-solid-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
 const projects = [
-  { id: 1, pImg: "/images/Personal Website.png", pName: "Personal Website", gLink: "", vLink: "" },
-  { id: 2, pImg: "/images/form filling.png", pName: "Form Filling Website", gLink: "", vLink: "" },
-  { id: 3, pImg: "/images/Chat Bot.png", pName: "Chatbot  Integration", gLink: "", vLink: "" },
-  { id: 4, pImg: "/images/Portfolio.png", pName: "My Personal Portfolio", gLink: "", vLink: "" },
-  { id: 5, pImg: "/images/Crop Recommendation.png", pName: "Crop Recommendation System", gLink: "", vLink: "" },
-  { id: 6, pImg: "/images/Figma Replication.png", pName: "Figma Replication", gLink: "", vLink: "" },
+  { id: 1, pImg: "/images/Personal Website.webp", pName: "Personal Website", gLink: "", vLink: "" },
+  { id: 2, pImg: "/images/form filling.webp", pName: "Form Filling Website", gLink: "", vLink: "" },
+  { id: 3, pImg: "/images/Chat Bot.webp", pName: "Chatbot  Integration", gLink: "", vLink: "" },
+  { id: 4, pImg: "/images/Portfolio.webp", pName: "My Personal Portfolio", gLink: "", vLink: "" },
+  { id: 5, pImg: "/images/Crop Recommendation.webp", pName: "Crop Recommendation System", gLink: "", vLink: "" },
+  { id: 6, pImg: "/images/Figma Replication.webp", pName: "Figma Replication", gLink: "", vLink: "" },
 ]
 
 function Projects() {

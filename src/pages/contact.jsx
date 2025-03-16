@@ -24,7 +24,7 @@ function Contact() {
                       <div className="contact-para">
                         <div className="contact-img">
                           <img
-                            src="/images/contact.png"
+                            src="/images/contact.webp"
                             alt="err_loading_image"
                           />
                         </div>

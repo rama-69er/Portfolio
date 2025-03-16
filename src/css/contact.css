@@ -110,15 +110,19 @@
   padding: 0 !important;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
     rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
-
 
 /* ----------------------- Media Query ------------------------- */
 
 @media (max-width: 992px) {
   .contact-part {
     margin: auto;
+  }
+}
+@media (min-width: 992px) {
+  .menu-bar {
+    display: none !important;
   }
 }
 
