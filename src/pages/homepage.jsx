@@ -7,12 +7,12 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheck, faPenToSquare, faWandMagicSparkles } from "@fortawesome/free-solid-svg-icons";
 
 const techData = [
-  { id: 1, Name: "HTML", imgLink: "./images/html.webp", aLink: "https://www.html.com" },
-  { id: 2, Name: "CSS", imgLink: "./images/css.webp", aLink: "https://www.w3schools.com/cssref/index.php" },
-  { id: 3, Name: "JavaScript", imgLink: "./images/js.webp", aLink: "https://www.w3schools.com/jsrEF/default.asp" },
-  { id: 4, Name: "Node.js", imgLink: "./images/node.webp", aLink: "https://www.nodejs.org" },
-  { id: 5, Name: "MongoDB", imgLink: "./images/mongo.webp", aLink: "http://www.mongodb.com" },
-  { id: 6, Name: "React.js", imgLink: "./images/react.webp", aLink: "http://www.react.dev" },
+  { id: 1, imgLink: "./images/html.webp", aLink: "https://www.html.com" },
+  { id: 2, imgLink: "./images/css.webp", aLink: "https://www.w3schools.com/cssref/index.php" },
+  { id: 3, imgLink: "./images/js.webp", aLink: "https://www.w3schools.com/jsrEF/default.asp" },
+  { id: 4, imgLink: "./images/node.webp", aLink: "https://www.nodejs.org" },
+  { id: 5, imgLink: "./images/mongo.webp", aLink: "http://www.mongodb.com" },
+  { id: 6, imgLink: "./images/react.webp", aLink: "http://www.react.dev" },
 ]
 
 function HomePage() {
@@ -75,7 +75,7 @@ function HomePage() {
                 </div>
               </div>
               <div className="project">
-                <h5>What I am Doing . . .</h5>
+                <h5><b>What I am Doing . . .</b></h5>
                 <div className="row">
                   <div className="col-lg-6">
                     <div className="project-left">
@@ -107,7 +107,7 @@ function HomePage() {
               </div>
               <div className="technology">
                 <div className="container">
-                  <h5>Technologies that I use . . .</h5>
+                  <h5 className="my-3"><b>Technologies that I use . . .</b></h5>
                   <div className="row">
                     {techData.map((data) =>
                       <div className="col-lg-2 col-md-4 col-sm-1">
@@ -116,9 +116,6 @@ function HomePage() {
                             <a href={data.aLink}>
                               <img src={data.imgLink} alt="err_loading" />
                             </a>
-                            <div>
-                              <a href={data.aLink}>{data.Name}</a>
-                            </div>
                           </span>
                         </div>
                       </div>
