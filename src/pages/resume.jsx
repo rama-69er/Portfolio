@@ -111,7 +111,7 @@ function Resume() {
                         <div className="resume-bar">
                           BOOTSTRAP
                           <div className="progress-bar">
-                            <div className="inner1-bar3">85%</div>
+                            <div className="inner1-bar3">100%</div>
                           </div>
                         </div>
                         <div className="resume-bar">
