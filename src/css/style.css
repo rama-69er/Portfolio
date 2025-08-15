@@ -21,7 +21,7 @@
 }
 
 @media (min-width: 320px) and (max-width: 768px) {
-  .homeTab .homepage-tab {
+  .homePage .homepage-tab {
     padding: 1rem;
     margin: 0;
   }
@@ -29,10 +29,10 @@
     width: 15rem;
     height: 30rem;
   }
-  .homeTab .homepage-tab .left-tab {
+  .homePage .homepage-tab .left-tab {
     border: 0;
   }
-  .homeTab .homepage-tab .right-tab {
+  .homePage .homepage-tab .right-tab {
     display: none;
   }
   .siteBody nav ul li a {

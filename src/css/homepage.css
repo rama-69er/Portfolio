@@ -6,50 +6,30 @@
   border: 2px solid var(--theme-pink);
   background-color: var(--theme-light-grey);
 }
-.homePage .homepage-image {
+.homePage {
   background-image: url("/public/images/bg.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
 }
 
-.homeTab {
+.homePage {
   background-color: var(--theme-transparent);
-  padding: 1rem;
 }
 
-.homeTab .homepage-tab {
+.homePage {
   background-color: var(--theme-white-background-transparent);
-  border: 2px solid var(--theme-grey);
-  border-radius: 1rem;
-  margin: 4%;
-  padding: 2rem;
 }
 
 /* --------------------- Home-Page (Left-Tab) ---------------------- */
-
-.homeTab .homepage-tab .left-tab {
-  border-right: 2px solid var(--theme-grey);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.homeTab .homepage-tab .left-tab ul {
+.homePage .left-tab ul {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
 }
 
-.homeTab .homepage-tab .left-tab ul li {
-  margin: 1rem 0.5rem;
-}
-
-.homeTab .homepage-tab .left-tab #profile-image {
-  border-radius: 1rem;
+.homePage .left-tab .profile-image {
   border: 4px solid var(--theme-light-grey);
-  height: 14rem;
-  width: 11rem;
   object-fit: cover;
 }
 
@@ -82,16 +62,8 @@
 }
 
 /* --------------------- Home-Page (Right-Tab) ---------------------- */
-.homeTab .homepage-tab .right-tab {
-  padding: 2rem 0;
-}
-
-.homeTab .homepage-tab .right-tab h5 {
+.homePage .right-tab h5 {
   text-decoration: underline;
-}
-
-.homeTab .homepage-tab .right-tab div {
-  padding-bottom: 1rem;
 }
 
 /* ================= SiteBody (About) ================= */
@@ -199,9 +171,7 @@
 
 /* --------------------- Media Query ---------------------- */
 @media (max-width: 2560px) {
-  .homeTab .homepage-tab .left-tab .title {
-    padding: 2rem 1rem;
-    text-align: center;
+  .homePage .left-tab .title {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -209,11 +179,6 @@
   }
 }
 @media (max-width: 1440px) {
-  .homeTab .homepage-tab {
-    margin-top: 4%;
-    padding: 1rem;
-  }
-
   .siteBody .site-about .about-image img {
     height: 45rem;
     width: 22.5rem;
@@ -224,9 +189,9 @@
 }
 
 @media (min-width: 768px) and (max-width: 1200px) {
-  .homeTab .homepage-tab .left-tab h1,
-  .homeTab .homepage-tab .left-tab ul,
-  .homeTab .homepage-tab .left-tab h5 {
+  .homePage .left-tab h1,
+  .homePage .left-tab ul,
+  .homePage .left-tab h5 {
     padding: 0 2rem;
   }
   .siteBody .site-about .about-para {
@@ -238,11 +203,11 @@
   .siteBody .site-about .about-para {
     margin-left: 6rem;
   }
-  .homeTab .homepage-tab .right-tab {
+  .homePage .right-tab {
     text-align: center;
   }
 
-  .homeTab .homepage-tab .left-tab {
+  .homePage .left-tab {
     border: none;
   }
 
@@ -283,12 +248,12 @@
   .contact-part .contact-para p a {
     font-size: x-small;
   }
-  .homeTab .homepage-tab .left-tab {
+  .homePage .left-tab {
     margin: auto;
     text-align: center;
   }
 
-  .homeTab .homepage-tab .left-tab ul {
+  .homePage .left-tab ul {
     display: flex;
     justify-content: center;
     padding: 0;
