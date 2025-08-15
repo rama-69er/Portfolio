@@ -55,7 +55,7 @@ function Header() {
                             </div>
                             <div className="col-lg-6">
                                 <div className="right-tab text-white">
-                                    <div className="row align-items-center justify-content-center">
+                                    <div className="row align-items-start justify-content-center">
                                         <div className="col-sm-6">
                                             <h5>Email</h5>
                                             <p>ramanand.dubey@yahoo.com</p>
