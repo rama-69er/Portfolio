@@ -25,15 +25,15 @@ function HomePage() {
               <Navbar />
             </div>
             <div className="col-lg-10">
-              <div className="site-about">
+              <div className="site-about p-0 p-md-3">
                 <div className="row">
                   <div className="col-md-5">
                     <div className="about-image">
-                      <img src="./images/dp1.webp" alt="err_loading" />
+                      <img src="./images/dp1.webp" alt="err_loading" className="img-fluid" />
                     </div>
                   </div>
                   <div className="col-md-7">
-                    <div className="about-para">
+                    <div className="about-para p-3 p-md-0">
                       <h3>About Me</h3>
                       <p>
                         Fresher web developer proficient in English, Hindi and
@@ -62,14 +62,16 @@ function HomePage() {
                       <h6>
                         <FontAwesomeIcon icon={faCheck} /> Leadership
                       </h6>
-                      <a
-                        target="_blank"
-                        rel="noreferrer"
-                        href="./Ramanand's Resume.pdf"
-                        download={true}
-                        className="theme-btn resume-btn"
-                      >Download My Resume</a
-                      >
+                      <div className="text-center text-md-start">
+                        <a
+                          target="_blank"
+                          rel="noreferrer"
+                          href="./Ramanand's Resume.pdf"
+                          download={true}
+                          className="theme-btn resume-btn mt-3 shadow fw-bold"
+                        >Download My Resume</a
+                        >
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -108,13 +110,13 @@ function HomePage() {
               <div className="technology">
                 <div className="container">
                   <h5 className="my-3"><b>Technologies that I use . . .</b></h5>
-                  <div className="row">
+                  <div className="row align-items-center justify-content-center justify-content-md-start">
                     {techData.map((data) =>
-                      <div className="col-lg-2 col-md-4 col-sm-1">
-                        <div className="technology-tab">
+                      <div className="mb-3 col-6 col-md-3 col-lg-2">
+                        <div className="technology-tab d-flex align-items-center justify-content-center rounded-3 bg-light p-4 w-100">
                           <span key={data.id}>
                             <a href={data.aLink}>
-                              <img src={data.imgLink} alt="err_loading" />
+                              <img src={data.imgLink} alt="err_loading" className="img-fluid" />
                             </a>
                           </span>
                         </div>

@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 /* ===================== Universal Tag ===================== */
 * {
   margin: 0;
@@ -26,17 +26,21 @@
   animation-duration: 0.3s;
 }
 
-p{
+p {
   margin-bottom: 1rem !important;
 }
-h1.h2,h3,h4,h5,h6{
+h1.h2,
+h3,
+h4,
+h5,
+h6 {
   margin-bottom: 0.5rem !important;
 }
 
 :root {
   --theme-facebook: #1877f2;
   --theme-linkedIn: #0a66c2;
-  --theme-instagram: #e4405f;
+  --theme-instagram: linear-gradient(115deg, #f9ce34, #ee2a7b, #6228d7);
   --theme-white-background: white;
   --theme-white-transparent-background: rgba(255, 255, 255, 0.502);
   --theme-brown: rgb(197, 56, 56);
@@ -63,13 +67,14 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-size:var(--step-0) !important;
+  font-size: var(--step-0) !important;
 }
 
 a {
   text-decoration: none !important;
   transition-duration: 0.3s;
-  font-family: var(--font-family-1) !important;
+  font-family: var(--font-family-2) !important;
+  font-size: var(--step-0) !important;
 }
 
 ul,
@@ -87,7 +92,7 @@ h1,
 h2,
 h3,
 h4,
-h5{
+h5 {
   font-family: var(--font-family-2) !important;
 }
 li {
@@ -117,7 +122,6 @@ li {
   transition: 0.5s;
 }
 
-
-.homeTab{
+.homeTab {
   background: var(--theme-pink-transparent);
 }

@@ -31,19 +31,19 @@ function Header() {
                                                     <h1>Ramanand Dubey</h1>
                                                     <h5>Software Developer</h5>
                                                 </div>
-                                                <ul className="list-unstyled d-flex align-items-center justify-content-evenly gap-3">
+                                                <ul className="list-unstyled mb-3 mb-md-0 d-flex align-items-center justify-content-evenly gap-3">
                                                     <li>
-                                                        <Link target="_blank" rel="noreferrer" to="https://www.facebook.com/ramanand.dubey.988/" className="theme-btn facebook">
+                                                        <Link target="_blank" rel="noreferrer" to="https://www.facebook.com/ramanand.dubey.988/" className="theme-btn facebook fs-5">
                                                             <FontAwesomeIcon icon={faFacebook} />
                                                         </Link>
                                                     </li>
                                                     <li>
-                                                        <Link target="_blank" rel="noreferrer" to="https://www.instagram.com/rd.x_69er/" className="theme-btn instagram">
+                                                        <Link target="_blank" rel="noreferrer" to="https://www.instagram.com/rd.x_69er/" className="theme-btn instagram  fs-5">
                                                             <FontAwesomeIcon icon={faInstagram} />
-                                                        </Link>
+                                                        </Link> 
                                                     </li>
                                                     <li>
-                                                        <Link target="_blank" rel="noreferrer" to="https://www.linkedin.com/in/ramanand-dubey-985b9025a/" className="theme-btn linkedIn">
+                                                        <Link target="_blank" rel="noreferrer" to="https://www.linkedin.com/in/ramanand-dubey-985b9025a/" className="theme-btn linkedIn fs-5">
                                                             <FontAwesomeIcon icon={faLinkedin} />
                                                         </Link>
                                                     </li>
