@@ -25,41 +25,41 @@ function HomePage() {
               <Navbar />
             </div>
             <div className="col-lg-10">
-              <div className="site-about p-0 p-md-3">
+              <div className="site-about bg-white my-2 rounded rounded-4 p-0 p-md-3">
                 <div className="row">
                   <div className="col-md-5">
                     <div className="about-image">
-                      <img src="./images/dp1.webp" alt="err_loading" className="img-fluid" />
+                      <img src="./images/dp1.webp" alt="err_loading" className="img-fluid w-100 rounded rounded-5" />
                     </div>
                   </div>
                   <div className="col-md-7">
                     <div className="about-para p-3 p-md-0">
-                      <h3>About Me</h3>
+                      <h2 className="h4 fw-bold">About Me</h2>
                       <p>
                         Fresher web developer proficient in English, Hindi and
                         Nepali languages seeking a challenging role as a Software
                         Engineer. Skilled in developing websites and problem
                         solving, with a strong understanding of programming
-                        languages and frameprojects. A hardprojecting and dedicated
+                        languages and frame projects. A hard projecting and dedicated
                         person with a passion for creating innovations and
                         Bootstrap.
                       </p>
-                      <h6>
+                      <h6 className="mb-3 text-secondary">
                         <FontAwesomeIcon icon={faCheck} /> Communication Skills
                       </h6>
-                      <h6>
+                      <h6 className="mb-3 text-secondary">
                         <FontAwesomeIcon icon={faCheck} /> Time Management
                       </h6>
-                      <h6>
+                      <h6 className="mb-3 text-secondary">
                         <FontAwesomeIcon icon={faCheck} /> Problem Solving
                       </h6>
-                      <h6>
+                      <h6 className="mb-3 text-secondary">
                         <FontAwesomeIcon icon={faCheck} /> Team Project
                       </h6>
-                      <h6>
+                      <h6 className="mb-3 text-secondary">
                         <FontAwesomeIcon icon={faCheck} /> Adaptability
                       </h6>
-                      <h6>
+                      <h6 className="mb-3 text-secondary">
                         <FontAwesomeIcon icon={faCheck} /> Leadership
                       </h6>
                       <div className="text-center text-md-start">
@@ -76,8 +76,8 @@ function HomePage() {
                   </div>
                 </div>
               </div>
-              <div className="project">
-                <h5><b>What I am Doing . . .</b></h5>
+              <div className="project p-3">
+                <h5 className="h5 fw-bold">What I am Doing...</h5>
                 <div className="row">
                   <div className="col-lg-6">
                     <div className="project-left">
@@ -107,9 +107,9 @@ function HomePage() {
                   </div>
                 </div>
               </div>
-              <div className="technology">
+              <div className="technology p-3">
                 <div className="container">
-                  <h5 className="my-3"><b>Technologies that I use . . .</b></h5>
+                  <h2 className="h4"><b>Technologies that I use . . .</b></h2>
                   <div className="row align-items-center justify-content-center justify-content-md-start">
                     {techData.map((data) =>
                       <div className="mb-3 col-6 col-md-3 col-lg-2">

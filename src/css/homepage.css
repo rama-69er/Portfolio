@@ -76,34 +76,7 @@
 
 /* ================= SiteBody (About) ================= */
 .siteBody .site-about {
-  background-color: var(--theme-white-background);
-  border-radius: 1rem;
-  margin-bottom: 1rem;
-  margin-top: 0.5rem;
-}
-
-.siteBody .site-about .about-image img {
-  border-radius: 1rem;
-  height: 50rem;
-  width: 25rem;
-  object-fit: cover;
-}
-
-.siteBody .site-about .about-para p:first-child {
-  color: var(--theme-pink);
-}
-
-.siteBody .site-about .about-para h3 {
-  font-weight: 700;
-}
-
-.siteBody .site-about .about-para p {
-  margin: 1rem 0;
-}
-
-.siteBody .site-about .about-para h6 {
-  color: var(--theme-grey);
-  margin: 2rem 0;
+  /* background-color: var(--theme-white-background); */
 }
 
 .siteBody .site-about .about-para .theme-btn {
@@ -113,7 +86,6 @@
 }
 .siteBody .project {
   border-radius: 1rem;
-  padding: 2rem 2rem 0 2rem;
   text-align: center;
   background-color: var(--theme-white-background);
 }
@@ -122,7 +94,6 @@
 .siteBody .project .project-right {
   padding: 2rem;
   border: 1px solid var(--theme-grey);
-  margin: 2rem 0;
   border-radius: 2rem;
 }
 
@@ -137,7 +108,6 @@
 .technology {
   background-color: var(--theme-white-background);
   text-align: center;
-  padding: 1rem 2rem;
   border-radius: 1rem;
   margin-top: 1rem;
 }
@@ -148,8 +118,7 @@
 }
 
 .technology .technology-tab a img{
-  min-height: 6rem;
-  max-height: 6rem;
+  height: 7.5rem;
 }
 
 /* --------------------- Media Query ---------------------- */
