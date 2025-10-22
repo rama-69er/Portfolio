@@ -100,6 +100,9 @@ h5 {
 li {
   list-style: none;
 }
+.text-pink{
+  color: var(--theme-pink) !important;
+}
 /* --------------------- SiteBody ---------------------- */
 .siteBody {
   background-color: var(--theme-light-grey);

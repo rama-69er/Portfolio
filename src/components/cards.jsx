@@ -19,23 +19,18 @@ function Cards(props) {
     return (
         <>
             <div key={props.hobbyId} className="col-lg-4 col-md-6">
-                <div className="cards-tab">
-                    <div className="cards-tab-img">
-                        <img
-                            src={props.hobbyImg}
-                            alt="err_loading"
-                        />
+                <div className="cards-tab p-3 shadow-sm rounded rounded-3 mb-4">
+                    <div className="cards-tab-img overflow-hidden mb-3 rounded-3">
+                        <img className='w-100 img-fluid' src={props.hobbyImg} alt="err_loading" />
                     </div>
                     <div className="cards-para">
-                        <span>{props.hobbyType}</span>
+                        <p className="text-pink">{props.hobbyType}</p>
                         <span>
                             {Array.from({ length: props.hobbyRatePoint }).map((_, i) => <FontAwesomeIcon key={props.hobbyId} icon={props.hobbyRateIcon} style={{ color: "#f9004d" }} />)}
                             {Array.from({ length: 5 - props.hobbyRatePoint }).map((_, i) => <FontAwesomeIcon key={props.hobbyId} icon={props.hobbyRateIcon} style={{ color: "grey" }} />)}
                         </span>
                     </div>
-                    <div className="cards-bottom">
-                        <p>{props.hobbyName}</p>
-                    </div>
+                    <h2 className='mb-0 h6 fw-bold text-center'>{props.hobbyName}</h2>
                 </div>
             </div>
         </>

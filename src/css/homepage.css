@@ -40,31 +40,31 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  transition-duration: 0.5s;
+  transition-duration: 0.3s;
 }
 
 .theme-btn:hover {
   background: var(--theme-pink);
   color: white;
-  transition-duration: 0.5s;
+  transition-duration: 0.3s;
 }
 
 .facebook:hover {
   background: var(--theme-facebook);
   color: white;
-  transition-duration: 0.5s;
+  transition-duration: 0.3s;
 }
 
 .instagram:hover {
   background: var(--theme-instagram);
   color: white;
-  transition-duration: 0.5s;
+  transition-duration: 0.3s;
 }
 
 .linkedIn:hover {
   background: var(--theme-linkedIn);
   color: white;
-  transition-duration: 0.5s;
+  transition-duration: 0.3s;
 }
 
 /* --------------------- Home-Page (Right-Tab) ---------------------- */
@@ -115,7 +115,7 @@
   box-shadow: rgb(179, 178, 178) 2px 2px 10px;
 }
 
-.technology .technology-tab a img{
+.technology .technology-tab a img {
   height: 7.5rem;
 }
 
