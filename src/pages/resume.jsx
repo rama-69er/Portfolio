@@ -59,9 +59,9 @@ function Resume() {
                       {educationDetails.map((education) => (
                         <>
                           <div className="resume-tab p-4 rounded rounded-4 mb-3" key={education.id}>
-                            <h2 className="mb-0 h4 fw-semibold  ">{education.degree}</h2>
-                            <div className="d-flex flex-row-reverse mb-2 align-items-center justify-content-between">
-                              <span className="p-2 rounded rounded-2 bg-white text-dark">{education.year}</span>
+                            <h2 className="h4 fw-semibold">{education.degree}</h2>
+                            <div className="d-block d-md-flex flex-row-reverse align-items-center justify-content-between">
+                              <span className="d-inline-block p-2 mb-2 mb-md-0 rounded rounded-2 bg-white text-dark">{education.year}</span>
                               <p className="mb-0">{education.school}</p>
                             </div>
                             <hr />
@@ -70,23 +70,25 @@ function Resume() {
                         </>
                       ))}
                     </div>
+                  </div>
+                  <div className="row">
                     <div className="col-12">
-                        <p className="mb-1 fw-semibold">2023 - Onwards</p>
-                        <h2 className="h3 fw-bold">Job / Intern Experience</h2>
-                        {jobExperience.map((job) => (
-                          <>
-                            <div className="resume-tab p-4 rounded rounded-4 mb-3" key={job.id}>
-                              <h2 className="mb-0 h4 fw-semibold  ">{job.company}</h2>
-                              <div className="d-flex flex-row-reverse mb-2 align-items-center justify-content-between">
-                                <span className="p-2 rounded rounded-2 bg-white text-dark">{job.duration}</span>
-                                <p className="mb-0">{job.location}</p>
-                              </div>
-                              <hr />
-                              <p className="mb-0">{job.description}</p>
+                      <p className="mb-1 fw-semibold">2023 - Onwards</p>
+                      <h2 className="h3 fw-bold">Job / Intern Experience</h2>
+                      {jobExperience.map((job) => (
+                        <>
+                          <div className="resume-tab p-4 rounded rounded-4 mb-3" key={job.id}>
+                            <h2 className="h4 fw-semibold">{job.company}</h2>
+                            <div className="d-block d-md-flex flex-row-reverse align-items-center justify-content-between">
+                              <span className="d-inline-block p-2 mb-2 mb-md-0 rounded rounded-2 bg-white text-dark">{job.duration}</span>
+                              <p className="mb-0">{job.location}</p>
                             </div>
-                          </>
-                        ))}
-                      </div>
+                            <hr />
+                            <p className="mb-0">{job.description}</p>
+                          </div>
+                        </>
+                      ))}
+                    </div>
                   </div>
                   <div className="row">
                     <div className="col-lg-6">
