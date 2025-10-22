@@ -23,13 +23,22 @@ const educationDetails = [{
   description: "I successfully completed my secondary education at Maharaja Public Sr. Sec. School, achieving a score of 63% from the RBSE board."
 }]
 
-const jobExperience = [{
-  id: 1,
-  company: "Innovilla Private Ltd.",
-  duration: "02 June,23 - 02 July,23",
-  location: "CDC Building, BHU, Varanasi",
-  description: "The company's objective was to develop a search engine optimized (SEO) web application for local businesses within the city. This web application was designed using HTML, CSS, JavaScript, and Bootstrap."
-},]
+const jobExperience = [
+  {
+    id: 1,
+    company: "Innovilla Private Ltd.",
+    duration: "02 June,23 - 02 July,23",
+    location: "CDC Building, BHU, Varanasi",
+    description: "The company's objective was to develop a search engine optimized (SEO) web application for local businesses within the city. This web application was designed using HTML, CSS, JavaScript, and Bootstrap."
+  },
+  {
+    id: 2,
+    company: "Edunext Technologys Pvt. Ltd.",
+    duration: "06 March,25 - Present",
+    location: "7th Floor, A-8, Block A, Sector 68, Noida",
+    description: "Edunext ERP is India's most advanced school management software with mobile apps for students, parents, teachers and management."
+  },
+]
 
 function Resume() {
   return (
@@ -44,52 +53,40 @@ function Resume() {
               <div className="siteBody">
                 <div className="resume-page">
                   <div className="row">
-                    <div className="col-lg-6">
-                      <div className="row">
-                        <div className="col-lg-12">
-                          <div className="resume-heading resume-heading-1">
-                            <p>2016 - 2024</p>
-                            <h2>Education Qualification</h2>
+                    <div className="col-12">
+                      <p className="mb-1 fw-semibold">2016 - 2024</p>
+                      <h2 className="h3 fw-bold">Education Qualification</h2>
+                      {educationDetails.map((education) => (
+                        <>
+                          <div className="resume-tab p-4 rounded rounded-4 mb-3" key={education.id}>
+                            <h2 className="mb-0 h4 fw-semibold  ">{education.degree}</h2>
+                            <div className="d-flex flex-row-reverse mb-2 align-items-center justify-content-between">
+                              <span className="p-2 rounded rounded-2 bg-white text-dark">{education.year}</span>
+                              <p className="mb-0">{education.school}</p>
+                            </div>
+                            <hr />
+                            <p className="mb-0">{education.description}</p>
                           </div>
-                        </div>
-                        <div className="col-lg-12">
-                          {educationDetails.map((education) => (
-                            <>
-                              <div className="resume-tab" key={education.id}>
-                                <h3>{education.degree}</h3>
-                                <span>{education.year}</span>
-                                <p>{education.school}</p>
-                                <hr />
-                                <p>{education.description}</p>
-                              </div>
-                            </>
-                          ))}
-                        </div>
-                      </div>
+                        </>
+                      ))}
                     </div>
-                    <div className="col-lg-6">
-                      <div className="row">
-                        <div className="col-lg-12">
-                          <div className="resume-heading resume-heading-2">
-                            <p>2023 - Onwards</p>
-                            <h2>Job / Intern Experience</h2>
-                          </div>
-                        </div>
-                        <div className="col-lg-12">
-                          {jobExperience.map((job) => (
-                            <>
-                              <div className="resume-tab" key={job.id}>
-                                <h3>{job.company}</h3>
-                                <span>{job.duration}</span>
-                                <p>{job.location}</p>
-                                <hr />
-                                <p>{job.description}</p>
+                    <div className="col-12">
+                        <p className="mb-1 fw-semibold">2023 - Onwards</p>
+                        <h2 className="h3 fw-bold">Job / Intern Experience</h2>
+                        {jobExperience.map((job) => (
+                          <>
+                            <div className="resume-tab p-4 rounded rounded-4 mb-3" key={job.id}>
+                              <h2 className="mb-0 h4 fw-semibold  ">{job.company}</h2>
+                              <div className="d-flex flex-row-reverse mb-2 align-items-center justify-content-between">
+                                <span className="p-2 rounded rounded-2 bg-white text-dark">{job.duration}</span>
+                                <p className="mb-0">{job.location}</p>
                               </div>
-                            </>
-                          ))}
-                        </div>
+                              <hr />
+                              <p className="mb-0">{job.description}</p>
+                            </div>
+                          </>
+                        ))}
                       </div>
-                    </div>
                   </div>
                   <div className="row">
                     <div className="col-lg-6">

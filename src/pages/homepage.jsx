@@ -77,7 +77,7 @@ function HomePage() {
                 </div>
               </div>
               <div className="project p-3">
-                <h5 className="h5 fw-bold">What I am Doing...</h5>
+                <h2 className="h5 fw-bold mb-3">What I am Doing...</h2>
                 <div className="row">
                   <div className="col-lg-6">
                     <div className="project-left">
@@ -109,7 +109,7 @@ function HomePage() {
               </div>
               <div className="technology p-3">
                 <div className="container">
-                  <h2 className="h4"><b>Technologies that I use . . .</b></h2>
+                  <h2 className="h5 mb-3 fw-bold">Technologies that I use...</h2>
                   <div className="row align-items-center justify-content-center justify-content-md-start">
                     {techData.map((data) =>
                       <div className="mb-3 col-6 col-md-3 col-lg-2">

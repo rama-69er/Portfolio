@@ -37,8 +37,6 @@
   color: var(--theme-pink);
   background: linear-gradient(110deg, #e8eaeb, #ffffff);
   border-radius: 0.5rem;
-  height: 2.5rem;
-  width: 2.5rem;
   display: flex;
   align-items: center;
   justify-content: center;

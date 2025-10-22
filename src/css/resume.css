@@ -16,12 +16,9 @@
 
 .resume-page .resume-tab {
   background: var(--theme-light-shading-grey);
-  padding: 2rem;
-  border-radius: 1rem;
+  border-left: 4px solid #000;
+  border-right: 4px solid #000;
   box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
-  margin-top: 2rem;
-  border-left: 4px solid black;
-  border-right: 4px solid black;
 }
 
 .resume-page .resume-tab:hover {
@@ -31,13 +28,8 @@
   border-left: 4px solid var(--theme-pink);
   border-right: 4px solid var(--theme-pink);
 }
-
 .resume-page .resume-tab span {
-  float: right;
-  background-color: var(--theme-white-background);
-  color: black;
-  padding: 0.3rem;
-  border-radius: 0.5rem;
+  border: 2px solid grey;
 }
 
 .resume-page .resume-features {
