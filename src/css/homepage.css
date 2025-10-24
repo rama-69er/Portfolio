@@ -73,10 +73,6 @@
 }
 
 /* ================= SiteBody (About) ================= */
-.siteBody .site-about {
-  /* background-color: var(--theme-white-background); */
-}
-
 .siteBody .project {
   border-radius: 1rem;
   background-color: var(--theme-white-background);
