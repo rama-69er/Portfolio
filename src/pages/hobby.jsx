@@ -15,7 +15,7 @@ function Hobby() {
             <section className="siteBody">
                 <div className="container">
                     <div className="row">
-                        <div className="col-lg-2">
+                        <div className="col-lg-2 d-none d-lg-block">
                             <Navbar />
                         </div>
                         <div className="col-lg-10">

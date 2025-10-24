@@ -35,12 +35,12 @@
 
 .theme-btn {
   color: var(--theme-pink);
+  font-weight:600;
   background: linear-gradient(110deg, #e8eaeb, #ffffff);
   border-radius: 0.5rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition-duration: 0.3s;
+  padding: 1rem;
+  box-shadow: #b2b2b2 2px 2px 8px;
+  width: fit-content;
 }
 
 .theme-btn:hover {
@@ -77,29 +77,13 @@
   /* background-color: var(--theme-white-background); */
 }
 
-.siteBody .site-about .about-para .theme-btn {
-  padding: 1rem;
-  width: fit-content;
-  height: 5rem;
-}
 .siteBody .project {
   border-radius: 1rem;
-  text-align: center;
   background-color: var(--theme-white-background);
 }
-
 .siteBody .project .project-left,
 .siteBody .project .project-right {
-  padding: 2rem;
-  border: 1px solid var(--theme-grey);
-  border-radius: 2rem;
-}
-
-.siteBody .project .project-left div,
-.siteBody .project .project-right div {
-  color: var(--theme-pink);
-  font-size: 3rem;
-  margin: 1rem 0;
+  min-height: 9rem;
 }
 
 /* --------------------- SiteBody (Technology) ---------------------- */
@@ -117,95 +101,4 @@
 
 .technology .technology-tab a img {
   height: 7.5rem;
-}
-
-/* --------------------- Media Query ---------------------- */
-@media (max-width: 2560px) {
-  .homePage .left-tab .title {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 1200px) {
-  .homePage .left-tab h1,
-  .homePage .left-tab ul,
-  .homePage .left-tab h5 {
-    padding: 0 2rem;
-  }
-}
-
-@media (max-width: 992px) {
-  .siteBody .site-about .about-para {
-    margin-left: 6rem;
-  }
-  .homePage .right-tab {
-    text-align: center;
-  }
-
-  .homePage .left-tab {
-    border: none;
-  }
-
-  .navbar {
-    display: none;
-    position: absolute;
-    margin: 0 !important;
-  }
-
-  .resume-page .resume-heading-2 {
-    margin-top: 2rem;
-  }
-  .contact-part {
-    margin: auto;
-  }
-}
-@media (max-width: 768px) {
-  .siteBody .site-about .about-para {
-    margin-left: 0rem;
-  }
-
-  .siteBody .site-about .about-image img {
-    height: 35rem;
-    width: 100%;
-  }
-
-  .siteBody .site-about .about-para h6 {
-    margin: 1rem 0;
-  }
-  .contact-part .contact-para p {
-    font-size: medium;
-  }
-  .contact-part .contact-para p a {
-    font-size: x-small;
-  }
-  .homePage .left-tab {
-    margin: auto;
-    text-align: center;
-  }
-
-  .homePage .left-tab ul {
-    display: flex;
-    justify-content: center;
-    padding: 0;
-  }
-}
-
-@media (max-width: 475px) {
-  .hobby-page .navBar .hobby-nav {
-    flex-direction: column;
-  }
-  .hobby-page .navBar .hobby-nav li {
-    margin: 0.5rem 0;
-  }
-  .clients .client-tab {
-    width: 80%;
-    margin: 1rem auto;
-  }
-  .clients .client-tab a img {
-    height: 12.5rem;
-    width: 75%;
-  }
 }

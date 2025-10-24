@@ -7,14 +7,17 @@
 .siteBody nav ul {
   background-color: var(--theme-white-background);
   border-radius: 1rem;
-  padding-top: 1rem !important;
 }
 
 .siteBody nav ul li {
   display: flex;
   text-align: center;
-  width: 120%;
-  padding: 0 1rem 1rem 1rem;
+  width: 100%;
+  padding: 1rem;
+}
+
+.siteBody nav ul li:not(:last-child) {
+  padding-bottom: 0;
 }
 
 .siteBody nav ul li a {
