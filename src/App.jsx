@@ -1,20 +1,18 @@
-import React from "react";
-// import "./style.css";
-import "./App.css";
+import "../src/css/app.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import Homepage from "../src/pages/homepage";
-import Footer from "../src/components/footer";
 import Resume from "../src/pages/resume";
 import Projects from "../src/pages/projects";
 import Hobby from "../src/pages/hobby";
+import Contact from "../src/pages/contact";
+import Footer from "../src/components/footer";
 import Sports from "../src/components/sports";
 import Cooking from "../src/components/cooking";
 import Books from "../src/components/books";
 import Travel from "../src/components/travel";
 import Music from "../src/components/music";
-import Contact from "../src/pages/contact";
 import ThankYou from "./pages/thankYou";
 import Header from "../src/components/header";
 import Mobilemenu from "../src/components/mobile-menu";

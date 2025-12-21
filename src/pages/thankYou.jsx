@@ -1,5 +1,4 @@
-import React from 'react'
-import "../css/thankYou.css";
+import "../css/app.css";
 
 function ThankYou() {
     return (
@@ -12,7 +11,7 @@ function ThankYou() {
                             <p>Your message has been sent successfully.</p>
                             <p>We will contact you very soon...</p>
                         </div>
-                        <a className='theme-btn' href='/' >
+                        <a className='theme-btn btn' href='/' >
                             Return to Homepage
                         </a>
                     </div>

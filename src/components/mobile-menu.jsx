@@ -1,5 +1,5 @@
 import { React, useState } from 'react';
-import '../css/mobile-menu.css';
+import "../css/app.css";
 
 import { Sidebar, Menu, MenuItem, SubMenu } from 'react-pro-sidebar';
 import { NavLink } from 'react-router-dom';

@@ -1,6 +1,4 @@
-import React from 'react';
-
-import "../css/hobby.css";
+import "../css/app.css";
 import Navbar from "../components/navbar";
 
 import { NavLink, Outlet, Navigate, useLocation } from "react-router-dom";
@@ -23,20 +21,20 @@ function Hobby() {
                                 <div className="row">
                                     <nav className="navBar">
                                         <ul className="hobby-nav">
-                                            <li className="nav-item">
-                                                <NavLink className="theme-btn" to="sports">Sports</NavLink>
+                                            <li className="nav-item p-0">
+                                                <NavLink className="theme-btn btn" to="sports">Sports</NavLink>
                                             </li>
-                                            <li className="nav-item">
-                                                <NavLink className="theme-btn" to="cooking">Cooking</NavLink>
+                                            <li className="nav-item p-0">
+                                                <NavLink className="theme-btn btn" to="cooking">Cooking</NavLink>
                                             </li>
-                                            <li className="nav-item">
-                                                <NavLink className="theme-btn" to="books">Books</NavLink>
+                                            <li className="nav-item p-0">
+                                                <NavLink className="theme-btn btn" to="books">Books</NavLink>
                                             </li>
-                                            <li className="nav-item">
-                                                <NavLink className="theme-btn" to="travel">Travel</NavLink>
+                                            <li className="nav-item p-0">
+                                                <NavLink className="theme-btn btn" to="travel">Travel</NavLink>
                                             </li>
-                                            <li className="nav-item">
-                                                <NavLink className="theme-btn" to="music">Music</NavLink>
+                                            <li className="nav-item p-0">
+                                                <NavLink className="theme-btn btn" to="music">Music</NavLink>
                                             </li>
                                         </ul>
                                     </nav>

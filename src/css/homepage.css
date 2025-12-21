@@ -37,34 +37,32 @@
   color: var(--theme-pink);
   font-weight:600;
   background: linear-gradient(110deg, #e8eaeb, #ffffff);
-  border-radius: 0.5rem;
-  padding: 1rem;
   box-shadow: #b2b2b2 2px 2px 8px;
-  width: fit-content;
+  transition: all 0.3s ease-in-out;
 }
 
 .theme-btn:hover {
   background: var(--theme-pink);
   color: white;
-  transition-duration: 0.3s;
+  transition: all 0.3s ease-in-out;
 }
 
 .facebook:hover {
   background: var(--theme-facebook);
   color: white;
-  transition-duration: 0.3s;
+  transition: all 0.3s ease-in-out;
 }
 
 .instagram:hover {
   background: var(--theme-instagram);
   color: white;
-  transition-duration: 0.3s;
+  transition: all 0.3s ease-in-out;
 }
 
 .linkedIn:hover {
   background: var(--theme-linkedIn);
   color: white;
-  transition-duration: 0.3s;
+  transition: all 0.3s ease-in-out;
 }
 
 /* --------------------- Home-Page (Right-Tab) ---------------------- */
@@ -96,5 +94,5 @@
 }
 
 .technology .technology-tab a img {
-  height: 7.5rem;
+  aspect-ratio: 9/12;
 }

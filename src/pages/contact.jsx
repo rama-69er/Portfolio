@@ -1,6 +1,4 @@
-import React from "react";
-import "../css/contact.css";
-
+import "../css/app.css";
 import Navbar from "../components/navbar";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -33,25 +31,22 @@ function Contact() {
                         <h6>
                           I am available for freelance projects. Connect with me via email, whatsapp or ping me on my number.
                         </h6>
-                        <p>
+                        
                           <a href="tel:+918005633372">
                             <FontAwesomeIcon icon={faPhone} /> : (+91) 8005633372
                           </a>
-                        </p>
-                        <p>
+                        
                           <a target="_blank"
                             rel="noreferrer"
                             href="https://wa.me/+918302491984/?text=Hello%20Ramanand%20Dubey%20!%20Are%20you%20available%20to%20work%20with%20us%20?">
                             <FontAwesomeIcon icon={faWhatsapp} /> : (+91) 8302491984
                           </a>
-                        </p>
-                        <p>
+                        
                           <a target="_blank"
                             rel="noreferrer"
                             href="mailto:ramanand.dubey@yahoo.com">
                             <FontAwesomeIcon icon={faEnvelope} /> : ramanand.dubey@yahoo.com
                           </a>
-                        </p>
                       </div>
                     </div>
                     <div className="col-lg-6">
@@ -93,7 +88,7 @@ function Contact() {
                                 {""}
                               </textarea>
                             </div>
-                            <button type="submit" className="theme-btn text-center " href="/thankyou">
+                            <button type="submit" className="theme-btn btn text-center " href="/thankyou">
                               <FontAwesomeIcon icon={faTelegram} />
                             </button>
                           </div>

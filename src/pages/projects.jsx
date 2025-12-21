@@ -1,6 +1,4 @@
-import React from "react";
-import "../css/projects.css";
-
+import "../css/app.css";
 import Navbar from "../components/navbar";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -9,7 +7,7 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
 const companyProjects = [
   { id: 1, pImg: "", pName: "Mount Litera School, Lucknow", gLink: "", vLink: "https://web.edunexttechnologies.com/theme/mlzs-landingpage/" },
-  { id: 2, pImg: "", pName: "Prince Public School, Rohini", gLink: "", vLink: "https://web.edunexttechnologies.com/theme/princepublicschool/" },
+  { id: 2, pImg: "", pName: "Prince Public School, Rohini", gLink: "", vLink: "https://princepublicschool.com/" },
   { id: 3, pImg: "", pName: "Agarwal Vidya Vihar, Surat", gLink: "", vLink: "https://avv.ac.in" },
   { id: 4, pImg: "", pName: "Tapti Valley International School, Surat", gLink: "", vLink: "https://tvis.edu.in/" },
   { id: 5, pImg: "", pName: "Agape Mission School, Rishikesh", gLink: "", vLink: "https://web.edunexttechnologies.com/theme/agape-mission/" },
@@ -41,7 +39,7 @@ function Projects() {
                     {companyProjects.map((pData) =>
                       <>
                         <div className="col-lg-4 col-md-6">
-                          <a target="_blank" rel="noreferrer" href={pData.vLink} className="project-para rounded-2 mb-3 shadow-sm btn theme-btn  d-flex align-items-center justify-content-between justify-content-md-evenly w-100 p-3">
+                          <a target="_blank" rel="noreferrer" href={pData.vLink} className="project-para rounded-2 mb-3 shadow-sm btn theme-btn btn  d-flex align-items-center justify-content-between justify-content-md-evenly w-100 p-3">
                             <FontAwesomeIcon className="me-2" icon={faGlobe} size="lg" />
                             <h2 className="h6 fw-semibold text-start text-md-center mb-0">{pData.pName}</h2>
                           </a>

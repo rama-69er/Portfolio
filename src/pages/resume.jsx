@@ -1,6 +1,4 @@
-import React from "react";
-import "../css/resume.css";
-
+import "../css/app.css";
 import Navbar from "../components/navbar";
 
 const educationDetails = [{

@@ -1,0 +1,445 @@
+/* ===============================================================
+   1. FONTS & EXTERNAL IMPORTS
+   =============================================================== */
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+/* ===============================================================
+   2. GLOBAL VARIABLES (:root)
+   =============================================================== */
+:root {
+  /* Colors & Themes */
+  --theme-pink: #f9004d;
+  --theme-pink-transparent: #f9004f88;
+  --theme-facebook: #1877f2;
+  --theme-linkedIn: #0a66c2;
+  --theme-instagram: linear-gradient(115deg, #f9ce34, #ee2a7b, #6228d7);
+  --theme-white-background: white;
+  --theme-white-transparent-background: rgba(255, 255, 255, 0.502);
+  --theme-white-background-transparent: rgba(255, 255, 255, 0.8);
+  --theme-brown: rgb(197, 56, 56);
+  --theme-transparent: transparent;
+  --theme-black: #000000;
+  --theme-grey: #696f79;
+  --theme-light-grey: #f0f2f4;
+  --theme-light-shading-grey: linear-gradient(145deg, #e2e8ec, #ffffff);
+  --theme-white: #f6f6f6;
+
+  /* Typography Clamps (Responsive Scaling) */
+  --step--2: clamp(0.6076rem, 0.5964rem + 0.0563vw, 0.64rem);
+  --step--1: clamp(0.7292rem, 0.7045rem + 0.1232vw, 0.8rem);
+  --step-0: clamp(0.875rem, 0.8315rem + 0.2174vw, 1rem);
+  --step-1: clamp(1.05rem, 0.9804rem + 0.3478vw, 1.25rem);
+  --step-2: clamp(1.26rem, 1.1548rem + 0.5261vw, 1.5625rem);
+  --step-3: clamp(1.512rem, 1.3586rem + 0.7672vw, 1.9531rem);
+  --step-4: clamp(1.8144rem, 1.5963rem + 1.0904vw, 2.4414rem);
+  --step-5: clamp(2.1773rem, 1.8731rem + 1.5208vw, 3.0518rem);
+
+  /* Font Families */
+  --font-family-1: "Inter", sans-serif;
+  --font-family-2: "Libre Baskerville", serif;
+}
+
+/* ===============================================================
+   3. UNIVERSAL RESET & BASE TAGS
+   =============================================================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--theme-light-grey);
+  font-family: "Times New Roman", Times, serif;
+  font-size: var(--step-0) !important;
+}
+
+p {
+  margin-bottom: 1rem !important;
+  line-height: 24px;
+  font-family: var(--font-family-1) !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 0.75rem !important;
+  font-family: var(--font-family-2) !important;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-family-1) !important;
+}
+
+li { list-style: none; }
+
+a {
+  text-decoration: none !important;
+  transition: 0.3s;
+  font-family: var(--font-family-2) !important;
+  font-size: var(--step-0) !important;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar { width: 4px; height: 4px; }
+::-webkit-scrollbar-track { box-shadow: inset 0 0 5px var(--theme-grey); border-radius: 4px; }
+::-webkit-scrollbar-thumb { background: var(--theme-pink); border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: var(--theme-pink-transparent); }
+
+/* Utility */
+.text-pink { color: var(--theme-pink) !important; }
+
+/* ===============================================================
+   4. NAVIGATION & LAYOUT
+   =============================================================== */
+.siteBody nav {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.siteBody nav ul {
+  background-color: var(--theme-white-background);
+  border-radius: 1rem;
+}
+
+.siteBody nav ul li {
+  display: flex;
+  text-align: center;
+  width: 100%;
+  padding: 1rem;
+}
+
+.siteBody nav ul li:not(:last-child) { padding-bottom: 0; }
+
+.siteBody nav ul li a {
+  padding: 2rem;
+  width: 100%;
+}
+
+/* Mobile Menu */
+.menu {
+  text-align: center;
+  background-color: var(--theme-white-background);
+}
+
+.menu .menu-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--theme-light-grey);
+}
+
+.css-ewdv3l, .ps-open { background-color: var(--theme-light-grey); }
+.css-ewdv3l li a { border-radius: 1rem; padding: 0 !important; }
+
+/* Active States */
+.ps-menu-button.active, .theme-btn.active {
+  border: 2px solid var(--theme-pink) !important;
+  background-color: var(--theme-light-grey) !important;
+}
+
+/* Sticky Button */
+.siteBody .sticky-btn {
+  background-color: var(--theme-pink-transparent);
+  text-align: center;
+  padding: 1.5rem;
+  border-radius: 50%;
+  float: right;
+  position: sticky;
+  bottom: 10%;
+  right: 1%;
+  color: black;
+  z-index: 1001;
+  transition: 0.5s;
+}
+
+.siteBody .sticky-btn:hover {
+  background-color: var(--theme-pink);
+  color: white;
+}
+
+/* ===============================================================
+   5. HOME PAGE & SHARED COMPONENTS
+   =============================================================== */
+.homePage {
+  background-image: url("/public/images/bg.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  background-color: var(--theme-white-background-transparent);
+}
+
+.homePage .left-tab ul {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.homePage .left-tab .profile-image {
+  border: 4px solid var(--theme-light-grey);
+  object-fit: cover;
+}
+
+.homePage .right-tab h5 { text-decoration: underline; }
+
+.homeTab { background: var(--theme-pink-transparent); }
+
+/* Buttons & Socials */
+.theme-btn {
+  color: var(--theme-pink);
+  font-weight: 600;
+  background: linear-gradient(110deg, #e8eaeb, #ffffff);
+  box-shadow: #b2b2b2 2px 2px 8px;
+  transition: all 0.3s ease-in-out;
+}
+
+.theme-btn:hover { background: var(--theme-pink); color: white; }
+
+.facebook:hover { background: var(--theme-facebook); color: white; }
+.instagram:hover { background: var(--theme-instagram); color: white; }
+.linkedIn:hover { background: var(--theme-linkedIn); color: white; }
+
+/* ===============================================================
+   6. PAGE SECTIONS (About, Technology, Projects, Hobby)
+   =============================================================== */
+.siteBody .project {
+  border-radius: 1rem;
+  background-color: var(--theme-white-background);
+}
+
+.siteBody .project .project-left, .siteBody .project .project-right {
+  min-height: 9rem;
+}
+
+/* Technology */
+.technology {
+  background-color: var(--theme-white-background);
+  text-align: center;
+  border-radius: 1rem;
+  margin-top: 1rem;
+}
+
+.technology .technology-tab {
+  background-color: var(--theme-light-grey);
+  box-shadow: rgb(179, 178, 178) 2px 2px 10px;
+}
+
+.technology .technology-tab a img { aspect-ratio: 9/12; }
+
+/* Projects Page */
+.site-project {
+  border-radius: 1rem;
+  padding: 1rem 1rem 0 1rem;
+  background-color: var(--theme-white-background);
+}
+
+.site-project .project-tab:hover img { transform: scale(1.1); transition: 0.4s; }
+
+.site-project .project-tab .project-bottom a {
+  font-size: 1.5rem;
+  color: black;
+  font-weight: 500;
+}
+
+.site-project .project-tab .project-bottom a:hover { color: var(--theme-pink); }
+
+.site-project .project-tab .project-bottom a i {
+  transform: rotate(-45deg);
+  font-size: 0rem;
+  color: var(--theme-pink);
+}
+
+.site-project .project-tab .project-bottom a:hover i {
+  font-size: 1.5rem;
+  transition: all 0.4s ease;
+}
+
+.project-para a { color: var(--theme-pink); }
+
+/* Hobby Page */
+.hobby-page {
+  border-radius: 1rem;
+  padding: 1rem 2rem 2rem 2rem;
+  background-color: var(--theme-white-background);
+  margin-top: 0.5rem;
+}
+
+.hobby-page .hobby-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.hobby-page .hobby-nav li a {
+  padding: 0.5rem 1rem;
+  border-radius: 4rem;
+  color: var(--theme-grey);
+  background-color: var(--theme-light-grey);
+  transition: 0.3s;
+}
+
+.hobby-page .hobby-tab {
+  background: var(--theme-light-shading-grey);
+  padding: 1rem 1rem 2rem 1rem;
+  border-radius: 1rem;
+  margin-top: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px;
+}
+
+.hobby-page .hobby-tab:hover .hobby-tab-img img { transform: scale(1.2); }
+.hobby-page .hobby-tab .hobby-bottom a:hover { color: var(--theme-pink); }
+
+/* ===============================================================
+   7. RESUME PAGE & PROGRESS BARS
+   =============================================================== */
+.resume-page {
+  background-color: var(--theme-white-background);
+  padding: 2rem;
+  border-radius: 1rem;
+  margin-top: 0.5rem;
+}
+
+.resume-page .resume-heading p { color: var(--theme-pink); }
+
+.resume-page .resume-tab {
+  background: var(--theme-light-shading-grey);
+  border-left: 4px solid #000;
+  border-right: 4px solid #000;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+}
+
+.resume-page .resume-tab:hover {
+  background: var(--theme-pink);
+  color: white;
+  border-left: 4px solid var(--theme-pink);
+  border-right: 4px solid var(--theme-pink);
+  transition: 0.3s;
+}
+
+.resume-page .resume-features .resume-bar .progress-bar {
+  width: 100%;
+  background-color: grey;
+  border: 4px solid grey;
+  border-radius: 0 1rem 1rem 0;
+}
+
+.resume-page .resume-features .resume-bar [class^="inner"] {
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(145deg, rgb(243, 217, 220) 30%, var(--theme-pink) 100%);
+  border-radius: 0 1rem 1rem 0;
+}
+
+/* Specific Bar Widths */
+.inner1-bar1, .inner1-bar2, .inner1-bar3 { width: 100%; }
+.inner1-bar4 { width: 75%; }
+.inner1-bar5 { width: 55%; }
+.inner2-bar1 { width: 70%; }
+.inner2-bar2 { width: 50%; }
+.inner2-bar3 { width: 65%; }
+
+/* ===============================================================
+   8. CONTACT, THANK YOU & FOOTER
+   =============================================================== */
+.contact-part {
+  padding: 0 2rem 2rem 2rem;
+  background-color: var(--theme-white-background);
+  border-radius: 1rem;
+  line-height: 2;
+  margin-top: 0.5rem;
+}
+
+.contact-part .contact-para {
+  padding: 2rem;
+  background-color: var(--theme-light-grey);
+  border-radius: 1rem;
+  margin-top: 2rem;
+}
+
+.contact-part .contact-para:hover .contact-img img { transform: scale(1.1); transition: 0.5s ease-in-out; }
+
+.contact-part .contact-para a {
+  display: block;
+  margin-bottom: 10px;
+  color: var(--theme-black);
+  border-left: 2px dashed var(--theme-black);
+  border-right: 2px dashed var(--theme-black);
+  width: 100%;
+  text-align: center;
+  background: #fff;
+}
+
+.contact-part .contact-para a:hover { color: var(--theme-pink); }
+
+.contact-part .contact-form {
+  margin-top: 2rem;
+  padding: 2rem;
+  background-color: var(--theme-light-grey);
+  border-radius: 1rem;
+}
+
+.contact-part .contact-form input, .contact-part .contact-form textarea {
+  border-radius: 4px;
+  width: 100%;
+  border: 1px solid var(--theme-grey);
+  margin: 1rem 0;
+}
+
+.thankyou-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.thankyou-para h1 { font-size: 2.5rem; color: #007bff; }
+
+footer {
+  background-color: var(--theme-light-grey);
+  padding: 4rem 0;
+  text-align: center;
+}
+
+footer img {
+  height: 4rem;
+  border-radius: 4rem;
+  margin: 2rem 0;
+}
+
+/* ===============================================================
+   9. MEDIA QUERIES
+   =============================================================== */
+@media (max-width: 1440px) {
+  .clients .client-tab a img { height: 120px !important; }
+}
+
+@media (min-width: 992px) {
+  .menu-bar { display: none !important; }
+}
+
+@media (max-width: 992px) {
+  .contact-part { margin: auto; }
+  .menu { display: block; }
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+  .homePage .homepage-tab .right-tab, .navbar { display: none; }
+  .siteBody nav ul li a { padding: 0.5rem; }
+}
+
+@media (max-width: 425px) {
+  .contact-part .contact-para a { font-size: x-small; }
+  .contact-part .contact-para p i { font-size: medium; }
+  .siteBody .site-about .about-image img { width: 100%; height: auto; }
+}
