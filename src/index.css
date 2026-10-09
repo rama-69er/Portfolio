@@ -1,13 +1,269 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --theme-pink: #f9004d;
+    --theme-pink-hover: #d80042;
+    --theme-pink-subtle: rgba(249, 0, 77, 0.1);
+    --theme-pink-border: rgba(249, 0, 77, 0.25);
+  }
+
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+
+  body {
+    /* Trending modern tech background with subtle ambient glows & geometric micro-grid */
+    background-color: #f8fafc;
+    background-image: 
+      radial-gradient(at 0% 0%, rgba(249, 0, 77, 0.07) 0px, transparent 45%),
+      radial-gradient(at 100% 15%, rgba(99, 102, 241, 0.08) 0px, transparent 40%),
+      radial-gradient(at 50% 90%, rgba(249, 0, 77, 0.05) 0px, transparent 50%),
+      radial-gradient(#94a3b8 0.75px, transparent 0.75px);
+    background-size: 100% 100%, 100% 100%, 100% 100%, 28px 28px;
+    background-attachment: fixed;
+    color: #1e293b;
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* Heading Font set to Plus Jakarta Sans */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+    color: #0f172a;
+    letter-spacing: -0.025em;
+  }
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--theme-pink);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--theme-pink-hover);
+}
+
+/* Primary Vibrant Action Button */
+.theme-btn-primary {
+  background: linear-gradient(135deg, #f9004d 0%, #e11d48 100%) !important;
+  color: #ffffff !important;
+  font-weight: 600;
+  border: 1px solid rgba(249, 0, 77, 0.5) !important;
+  box-shadow: 0 4px 14px rgba(249, 0, 77, 0.35);
+  border-radius: 0.75rem;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.theme-btn-primary:hover {
+  background: linear-gradient(135deg, #d80042 0%, #be123c 100%) !important;
+  color: #ffffff !important;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 22px rgba(249, 0, 77, 0.45);
+}
+
+.theme-btn-primary:active {
+  transform: translateY(0);
+}
+
+/* Secondary Neumorphic / Outlined Theme Button */
+.theme-btn {
+  color: var(--theme-pink) !important;
+  font-weight: 600;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+  border-radius: 0.75rem;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.theme-btn:hover {
+  background: var(--theme-pink) !important;
+  color: #ffffff !important;
+  border-color: var(--theme-pink) !important;
+  box-shadow: 0 6px 16px rgba(249, 0, 77, 0.3);
+  transform: translateY(-2px);
+}
+
+.theme-btn:active {
+  transform: translateY(0);
+}
+
+.theme-btn.active {
+  border: 2px solid var(--theme-pink) !important;
+  background: #ffffff !important;
+  color: var(--theme-pink) !important;
+  box-shadow: 0 2px 8px rgba(249, 0, 77, 0.15);
+}
+
+/* Social Icon Buttons */
+.social-btn {
+  width: 42px;
+  height: 42px;
+  padding: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.75rem;
+  font-size: 1.25rem;
+  color: var(--theme-pink);
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+  transition: all 0.25s ease;
+}
+
+.social-btn:hover {
+  transform: translateY(-3px);
+  color: #ffffff !important;
+}
+
+.social-btn.facebook:hover {
+  background: #1877f2 !important;
+  box-shadow: 0 4px 12px rgba(24, 119, 242, 0.35);
+}
+
+.social-btn.instagram:hover {
+  background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888) !important;
+  box-shadow: 0 4px 12px rgba(225, 48, 108, 0.35);
+}
+
+.social-btn.linkedin:hover {
+  background: #0a66c2 !important;
+  box-shadow: 0 4px 12px rgba(10, 102, 194, 0.35);
+}
+
+/* Header Wood & Ivy Texture Container */
+.portfolio-header-container {
+  background-color: #211c19;
+  background-image: 
+    linear-gradient(rgba(17, 13, 11, 0.82), rgba(28, 22, 19, 0.88)),
+    url('/images/bg.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Card Hover Lift */
+.card-hover-lift {
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.25s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.25s ease;
+}
+
+.card-hover-lift:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 32px -4px rgba(15, 23, 42, 0.08) !important;
+  border-color: rgba(249, 0, 77, 0.3) !important;
+}
+
+/* Image Zoom Container */
+.img-zoom-container {
+  overflow: hidden;
+  background-color: #f8fafc;
+}
+
+.img-zoom-container img {
+  transition: transform 0.45s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: transform;
+}
+
+.card-hover-lift:hover .img-zoom-container img {
+  transform: scale(1.08);
+}
+
+/* Resume Experience & Education Cards */
+.resume-card {
+  background: #ffffff;
+  border-left: 4px solid #0f172a;
+  border-right: 4px solid #0f172a;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.resume-card:hover {
+  background: #ffffff;
+  border-left: 4px solid var(--theme-pink);
+  border-right: 4px solid var(--theme-pink);
+  transform: translateY(-3px);
+  box-shadow: 0 12px 28px -4px rgba(249, 0, 77, 0.12) !important;
+}
+
+.resume-card:hover h3, .resume-card:hover h4 {
+  color: var(--theme-pink);
+}
+
+/* Tech Stack Cards */
+.tech-card {
+  transition: all 0.25s ease;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+}
+
+.tech-card:hover {
+  transform: translateY(-4px) scale(1.03);
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.07);
+  border-color: var(--theme-pink);
+}
+
+/* Floating Action Button */
+.floating-action-btn {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  width: 50px;
+  height: 50px;
+  border-radius: 9999px;
+  background-color: var(--theme-pink);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  box-shadow: 0 8px 24px rgba(249, 0, 77, 0.4);
+  z-index: 50;
+  border: none;
+  cursor: pointer;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.floating-action-btn:hover {
+  background-color: var(--theme-pink-hover);
+  transform: translateY(-4px) scale(1.05);
+  box-shadow: 0 12px 28px rgba(249, 0, 77, 0.5);
+}
+
+/* Animations */
+@keyframes fadeInSlide {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-menu-open {
+  animation: fadeInSlide 0.25s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }

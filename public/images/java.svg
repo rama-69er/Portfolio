@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <path d="M42 80 C30 80 25 76 35 73 C42 71 48 71 55 71 C62 71 70 72 73 75 C68 78 55 80 42 80 Z" fill="#5382a1"/>
+  <path d="M40 88 C25 88 20 83 33 79 C42 76 58 76 68 79 C62 84 50 88 40 88 Z" fill="#f89820"/>
+  <path d="M48 64 C40 64 35 60 42 57 C50 54 58 54 65 57 C58 61 52 64 48 64 Z" fill="#5382a1"/>
+  <path d="M60 48 C65 54 62 60 52 64 C48 60 50 56 56 52 C60 48 62 42 60 38 C58 42 58 46 60 48 Z" fill="#e76f00"/>
+  <path d="M45 42 C40 46 38 52 46 56 C50 52 48 48 44 46 C40 44 42 36 45 32 C43 35 43 39 45 42 Z" fill="#e76f00"/>
+  <path d="M52 28 C56 34 54 40 48 44 C44 40 46 36 50 32 C54 28 54 22 52 18 C50 21 50 25 52 28 Z" fill="#5382a1"/>
+  <text x="50" y="98" font-family="sans-serif" font-weight="bold" font-size="9" fill="#1e293b" text-anchor="middle">Java</text>
+</svg>

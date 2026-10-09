@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" width="1200" height="400">
+  <defs>
+    <linearGradient id="woodGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#3a2e2b"/>
+      <stop offset="50%" stop-color="#2a201c"/>
+      <stop offset="100%" stop-color="#1f1614"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="400" fill="url(#woodGrad)"/>
+  <!-- Wood plank lines -->
+  <line x1="0" y1="80" x2="1200" y2="80" stroke="#1f1614" stroke-width="3" opacity="0.6"/>
+  <line x1="0" y1="160" x2="1200" y2="160" stroke="#1f1614" stroke-width="3" opacity="0.6"/>
+  <line x1="0" y1="240" x2="1200" y2="240" stroke="#1f1614" stroke-width="3" opacity="0.6"/>
+  <line x1="0" y1="320" x2="1200" y2="320" stroke="#1f1614" stroke-width="3" opacity="0.6"/>
+  <!-- Ivy leaves left -->
+  <g fill="#2b6135" opacity="0.85">
+    <circle cx="40" cy="50" r="28"/>
+    <circle cx="80" cy="90" r="32"/>
+    <circle cx="30" cy="140" r="25"/>
+    <circle cx="70" cy="190" r="30"/>
+    <circle cx="40" cy="270" r="28"/>
+    <circle cx="90" cy="330" r="35"/>
+  </g>
+  <g fill="#43894f" opacity="0.9">
+    <circle cx="60" cy="65" r="22"/>
+    <circle cx="95" cy="110" r="24"/>
+    <circle cx="50" cy="165" r="20"/>
+    <circle cx="85" cy="210" r="24"/>
+    <circle cx="60" cy="290" r="22"/>
+  </g>
+  <!-- Ivy leaves right -->
+  <g fill="#2b6135" opacity="0.85">
+    <circle cx="1160" cy="50" r="28"/>
+    <circle cx="1120" cy="100" r="32"/>
+    <circle cx="1170" cy="160" r="25"/>
+    <circle cx="1130" cy="220" r="30"/>
+    <circle cx="1160" cy="310" r="32"/>
+  </g>
+</svg>

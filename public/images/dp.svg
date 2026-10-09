@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 450" width="400" height="450">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#495057"/>
+      <stop offset="100%" stop-color="#212529"/>
+    </linearGradient>
+    <linearGradient id="tieGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1877f2"/>
+      <stop offset="100%" stop-color="#0a58ca"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="450" rx="24" fill="url(#bgGrad)"/>
+  <!-- Portrait silhouette & styling -->
+  <circle cx="200" cy="160" r="95" fill="#fcd5b5"/>
+  <path d="M 120 150 Q 200 80 280 150 Q 200 100 120 150 Z" fill="#2b1810"/>
+  <!-- Hair -->
+  <path d="M 115 150 C 115 70 285 70 285 150 C 270 110 130 110 115 150 Z" fill="#1f140e"/>
+  <!-- Beard -->
+  <path d="M 135 180 Q 200 270 265 180 Q 255 240 200 255 Q 145 240 135 180 Z" fill="#1f140e"/>
+  <!-- Glasses -->
+  <rect x="145" y="145" width="40" height="26" rx="6" fill="none" stroke="#212529" stroke-width="4"/>
+  <rect x="215" y="145" width="40" height="26" rx="6" fill="none" stroke="#212529" stroke-width="4"/>
+  <line x1="185" y1="158" x2="215" y2="158" stroke="#212529" stroke-width="4"/>
+  <!-- Smile -->
+  <path d="M 175 205 Q 200 220 225 205" fill="none" stroke="#ffffff" stroke-width="6" stroke-linecap="round"/>
+  <!-- Shirt & Tie -->
+  <path d="M 90 450 L 130 280 L 270 280 L 310 450 Z" fill="#868e96"/>
+  <!-- Collar -->
+  <polygon points="160,280 200,320 170,320" fill="#ced4da"/>
+  <polygon points="240,280 200,320 230,320" fill="#ced4da"/>
+  <!-- Tie -->
+  <polygon points="190,320 210,320 218,450 182,450" fill="url(#tieGrad)"/>
+  <!-- Stripes on tie -->
+  <line x1="185" y1="360" x2="215" y2="350" stroke="#ffffff" stroke-width="3"/>
+  <line x1="183" y1="400" x2="217" y2="390" stroke="#ffffff" stroke-width="3"/>
+  <text x="200" y="420" font-family="sans-serif" font-size="16" font-weight="bold" fill="#ffffff" text-anchor="middle" letter-spacing="1">RAMANAND DUBEY</text>
+</svg>

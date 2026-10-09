@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 480" width="400" height="480">
+  <defs>
+    <linearGradient id="hallway" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#f8f9fa"/>
+      <stop offset="100%" stop-color="#e9ecef"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="480" rx="24" fill="url(#hallway)"/>
+  <rect x="20" y="40" width="70" height="440" fill="#dee2e6" opacity="0.6"/>
+  <rect x="310" y="40" width="70" height="440" fill="#dee2e6" opacity="0.6"/>
+  <!-- Portrait figure -->
+  <circle cx="200" cy="140" r="85" fill="#fcd5b5"/>
+  <path d="M 125 130 C 125 60 275 60 275 130 C 260 95 140 95 125 130 Z" fill="#1f140e"/>
+  <path d="M 140 160 Q 200 240 260 160 Q 250 220 200 230 Q 150 220 140 160 Z" fill="#1f140e"/>
+  <path d="M 180 185 Q 200 198 220 185" fill="none" stroke="#ffffff" stroke-width="5" stroke-linecap="round"/>
+  <!-- Mint Green Shirt -->
+  <path d="M 90 480 L 130 250 L 270 250 L 310 480 Z" fill="#78e0c0"/>
+  <!-- Collar -->
+  <polygon points="160,250 200,285 175,285" fill="#58d0ae"/>
+  <polygon points="240,250 200,285 225,285" fill="#58d0ae"/>
+  <text x="200" y="450" font-family="sans-serif" font-size="18" font-weight="bold" fill="#0f5132" text-anchor="middle">WEB DEVELOPER</text>
+</svg>
