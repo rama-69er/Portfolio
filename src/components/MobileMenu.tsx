@@ -65,7 +65,7 @@ export const MobileMenu: React.FC = () => {
                     end={item.to === '/'}
                     onClick={handleClose}
                     className={({ isActive }) =>
-                      `w-full text-left py-3.5 px-5 rounded-2xl text-base font-bold flex items-center gap-3.5 transition-all duration-200 no-underline ${
+                      `w-full text-left py-3.5 px-5 rounded-2xl text-sm font-bold flex items-center justify-center gap-3.5 transition-all duration-300 no-underline ${
                         isActive
                           ? 'border-2 border-[#f9004d] text-[#f9004d] bg-rose-50/50 shadow-xs'
                           : 'text-slate-600 bg-slate-50 hover:bg-slate-100 hover:text-[#f9004d] border border-slate-200/70'

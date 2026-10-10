@@ -1,12 +1,12 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { 
-  faUser, 
-  faFileText, 
-  faLaptopCode, 
-  faHeart, 
-  faAddressBook 
+import {
+  faUser,
+  faFileText,
+  faLaptopCode,
+  faHeart,
+  faAddressBook
 } from '@fortawesome/free-solid-svg-icons';
 
 export const Navbar: React.FC = () => {
@@ -28,14 +28,14 @@ export const Navbar: React.FC = () => {
                 to={item.to}
                 end={item.to === '/'}
                 className={({ isActive }) =>
-                  `w-full text-left py-3.5 px-5 rounded-2xl text-sm font-bold flex items-center gap-3.5 transition-all duration-300 no-underline ${
+                  `w-full text-left py-3.5 px-5 rounded-2xl text-sm font-bold flex items-center justify-center gap-3.5 transition-all duration-300 no-underline ${
                     isActive
                       ? 'border-2 border-[#f9004d] text-[#f9004d] bg-rose-50/50 shadow-xs translate-x-1'
                       : 'text-slate-600 bg-slate-50/70 hover:bg-white hover:text-[#f9004d] hover:shadow-xs border border-slate-200/80 hover:translate-x-1'
                   }`
                 }
               >
-                <div className="flex items-center gap-3.5">
+                <div className="flex items-center gap-1.5">
                   <span className="w-8 h-8 rounded-xl flex items-center justify-center bg-white/90 text-center shrink-0">
                     <FontAwesomeIcon icon={item.icon} className="text-xs" />
                   </span>
