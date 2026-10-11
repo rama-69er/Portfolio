@@ -75,6 +75,7 @@ export const TECH_STACK = [
   { id: 4, name: 'Tailwind CSS', imgLink: '/images/tailwind.webp', aLink: 'https://tailwindcss.com' },
   { id: 5, name: 'React.js', imgLink: '/images/react.webp', aLink: 'https://react.dev' },
   { id: 6, name: 'Next.js', imgLink: '/images/nextjs.webp', aLink: 'https://nextjs.org' },
+  { id: 6, name: 'PHP', imgLink: '/images/php.webp', aLink: 'https://www.php.net' },
   { id: 7, name: 'Node.js', imgLink: '/images/node.webp', aLink: 'https://nodejs.org' },
   { id: 8, name: 'MongoDB', imgLink: '/images/mongo.webp', aLink: 'https://www.mongodb.com' },
   { id: 9, name: 'Java', imgLink: '/images/java.webp', aLink: 'https://www.java.com' },

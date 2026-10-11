@@ -34,67 +34,6 @@ Make sure you have installed:
 * npm (included with Node.js)
 * Git
 
-### Installation
-
-1. Clone the repository:
-
-   ```bash
-   git clone https://github.com/rama-69er/Portfolio.git
-   ```
-
-2. Navigate to the project directory:
-
-   ```bash
-   cd Portfolio
-   ```
-
-3. Install dependencies:
-
-   ```bash
-   npm install
-   ```
-
-4. Start the development server:
-
-   ```bash
-   npm run dev
-   ```
-
-5. Open the local URL displayed in your terminal, usually:
-
-   ```text
-   http://localhost:5173
-   ```
-
-## 📦 Production Build
-
-To create an optimized production build, run:
-
-```bash
-npm run build
-```
-
-Vite generates the production-ready files in the `dist` directory by default.
-
-To preview the production build locally:
-
-```bash
-npm run preview
-```
-
-## ☁️ Deployment
-
-This portfolio is deployed using [Vercel](https://vercel.com/).
-
-For a standard Vite deployment, use these settings:
-
-* **Framework Preset:** Vite
-* **Build Command:** `npm run build`
-* **Output Directory:** `dist`
-* **Install Command:** `npm install`
-
-Push changes to the connected GitHub repository to trigger a new deployment, provided automatic deployments are enabled.
-
 ## 📁 Project Structure
 
 A typical Vite project structure looks like this:
